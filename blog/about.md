@@ -14,6 +14,6 @@ key: page-about
 
 ## Some Links | 相关链接
 
-- [Site Log](/blog/site-log.html)
+- [Site Log](https:yutao.art.blog)
 
 ---
