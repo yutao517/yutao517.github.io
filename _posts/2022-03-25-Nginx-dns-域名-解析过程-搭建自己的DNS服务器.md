@@ -1,10 +1,10 @@
 ---
-layout article
-title Nginx-dns-域名-解析过程-搭建自己的DNS服务器
-tags Nginx
-category blog
-date 2022-03-25 000000 +0800
-mermaid true
+layout: article
+title: Nginx-dns-域名-解析过程-搭建自己的DNS服务器
+tags: Nginx
+category: blog
+date: 2022-03-25 000000 +0800
+mermaid: true
 ---
 
 ## 域名系统
