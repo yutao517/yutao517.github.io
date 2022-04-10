@@ -14,6 +14,6 @@ key: page-about
 
 ## Some Links | 相关链接
 
-- [WordPress站点](https:yutao.art.blog)
+- [WordPress站点](https://yutao.art.blog/)
 
 ---
