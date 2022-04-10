@@ -1,10 +1,10 @@
 ---
-layout article
-title Nginx模块-access认证-限制浏览器和IP地址访问geooip地理位置信息库
-tags Nginx
-category blog
-date 2022-03-23 000000 +0800
-mermaid true
+layout: article
+title: Nginx模块-access认证-限制浏览器和IP地址访问geooip地理位置信息库
+tags: Nginx
+category: blog
+date: 2022-03-23 000000 +0800
+mermaid: true
 ---
 ## Nginx常用模块
 
