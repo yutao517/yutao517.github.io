@@ -1,10 +1,10 @@
 ---
-layout article
-title Nginx-反向代理-realip-LVS-四层七层负载均衡
-tags Nginx
-category blog
-date 2022-03-27 000000 +0800
-mermaid true
+layout: article
+title: Nginx-反向代理-realip-LVS-四层七层负载均衡
+tags: Nginx
+category: blog
+date: 2022-03-27 000000 +0800
+mermaid: true
 ---
  ## 代理
 **正向代理**：正向代理作用在客户端，我们访问一个网站比如只能在校园访问的校园网站，校外访问不了，但是我们可以通过一个代理服务器，比如一台在校内的服务器，校内服务器可以访问到校园网站，那么我们连上这个服务器，让它请求我们需要的网站，再返回给我们，这就是正向代理。
