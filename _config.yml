@@ -18,9 +18,9 @@
 ##############################
 url: https://tianqi.name
 baseurl: /
-title: Qi's Site
+title: YUtao's Site
 description: >
-    Tian Qi's Site | 田琦的小站
+    Yutao's Site | 王宇涛的小站
 
 
 ## => Language and Timezone
@@ -32,18 +32,14 @@ timezone: Asia/Shanghai
 ## => Author and Social
 ##############################
 author:
-  name: Tian Qi
-  email: kitian616@outlook.com
-  twitter: kitian616
-  github:  kitian616
-  googleplus: 101827554735084402671
-  weibo: 234695683
-  douban: kitian616
+  name: Wang YU Tao
+  email: wyt1271030564@gmail.com
+  github:  yutao517
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: kitian616/kitian616.github.io
+repository: yutao517/yutao517.github.io
 repository_tree: master
 
 
@@ -76,7 +72,7 @@ paginate_path: /blog/page:num
 comments:
   provider: disqus
   disqus:
-    shortname: kitian616-github-io
+    shortname: yutao517-github-io
 
 
 ## => Pageview
