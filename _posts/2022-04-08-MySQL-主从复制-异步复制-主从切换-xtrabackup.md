@@ -2,9 +2,9 @@
 layout: article
 title: MySQL-主从复制-异步复制-主从切换-xtrabackup
 tags: MySQL数据库
-category blog
+category: blog
 date: 2022-04-08 000000 +0800
-mermaid true
+mermaid: true
 ---
 ## 主从复制的原理图
 
