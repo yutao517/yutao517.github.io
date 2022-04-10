@@ -2,9 +2,9 @@
 layout: article
 title: MySQL-Shell脚本操作MySQL数据库
 tags: MySQL数据库
-category blog
+category: blog
 date: 2022-04-01 000000 +0800
-mermaid true
+mermaid: true
 ---
 
 
