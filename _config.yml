@@ -16,7 +16,7 @@
 
 ## => Site Settings
 ##############################
-url: https://tianqi.name
+url: https://yutao.co
 baseurl: /
 title: Yutao's Site
 description: >
@@ -32,7 +32,7 @@ timezone: Asia/Shanghai
 ## => Author and Social
 ##############################
 author:
-  name: Wang YU Tao
+  name: Wang Yu Tao
   email: wyt1271030564@gmail.com
   github:  yutao517
   weibo: 6310353962
