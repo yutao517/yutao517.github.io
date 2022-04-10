@@ -1,5 +1,5 @@
 default:
-  text_skin: chocolate
+  text_skin: ocean
   highlight_theme: default
   lang: en
   paths:
