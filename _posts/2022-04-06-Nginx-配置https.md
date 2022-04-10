@@ -1,10 +1,10 @@
 ---
-layout article
-title Nginx-配置https环境
-tags Nginx
-category blog
-date 2022-04-06 000000 +0800
-mermaid true
+layout: article
+title: Nginx-配置https环境
+tags: Nginx
+category: blog
+date: 2022-04-06 000000 +0800
+mermaid: true
 ---
 
 ## 配置https环境
