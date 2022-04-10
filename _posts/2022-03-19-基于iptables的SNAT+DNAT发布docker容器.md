@@ -1,10 +1,10 @@
 ﻿---
-layout article
-title 基于iptables的SNAT+DNAT发布docker容器
+layout: article
+title: 基于iptables的SNAT+DNAT发布docker容器
 tags 计算机网络
 category blog
-date 2022-03-19 000000 +0800
-mermaid true
+date: 2022-03-19 000000 +0800
+mermaid: true
 ---
 ## SNAT代理内网上网
 **SNAT**: （英语：Source Network Address Translation）**修改数据包的源地址**。
