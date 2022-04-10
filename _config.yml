@@ -67,12 +67,6 @@ paginate: 7
 paginate_path: /blog/page:num
 
 
-## => Comments
-##############################
-comments:
-  provider: disqus
-  disqus:
-    shortname: yutao517-github-io
 
 
 ## => Pageview
