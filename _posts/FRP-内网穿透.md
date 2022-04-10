@@ -1,3 +1,12 @@
+---
+layout: article
+title: FRP-内网穿透
+tags: 计算机网络
+category: blog
+date: 2022-02-20 15:32:20 +08:00
+mermaid: true
+---
+
 ## 1.frp介绍
 
    frp 是一种快速反向代理，可帮助您将 NAT 或防火墙后面的本地服务器暴露给 Internet。目前，它支持TCP和UDP，以及HTTP和HTTPS协议，可以通过域名将请求转发到内部服务。
