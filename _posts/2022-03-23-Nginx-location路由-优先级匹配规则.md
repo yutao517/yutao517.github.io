@@ -1,10 +1,10 @@
 ---
-layout article
-title Nginx-location路由-优先级匹配规则
-tags Nginx
-category blog
-date 2022-03-23 000000 +0800
-mermaid true
+layout: article
+title: Nginx-location路由-优先级匹配规则
+tags: Nginx
+category: blog
+date: 2022-03-23 000000 +0800
+mermaid: true
 ---
 ## 语法规则
 
