@@ -2,9 +2,9 @@
 layout: article
 title: MySQL-日志-详解事务执行流程-刷盘-redo-undo
 tags: MySQL数据库
-category blog
+category: blog
 date: 2022-04-06 000000 +0800
-mermaid true
+mermaid: true
 ---
 
 日志是用来排错，做数据分析，了解程序运行情况的。
