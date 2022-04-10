@@ -13,3 +13,10 @@ header:
       zh-Hans:  关于
       zh-Hant:  關於
     url:        /blog/about.html
+   
+  - titles:
+      en:       Download
+      zh:       下载
+      zh-Hans:  下载
+      zh-Hant:  下載
+    url:        https://download.yutao.co
