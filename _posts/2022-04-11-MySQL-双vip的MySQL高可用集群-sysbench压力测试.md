@@ -37,7 +37,7 @@ mermaid: true
  ![在这里插入图片描述](https://img-blog.csdnimg.cn/31a3f752c6694e8a99c49b25d8e1e39d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
 
  ## GTID主从复制
- - 上篇文章，我已经配置好了后端master(192.168.2.58)，slave1(192.168.2.218)，slave2(192.168.2.228)的GTID主从复制[点击跳转](https://blog.csdn.net/weixin_46415378/article/details/124049260?spm=1001.2014.3001.5501)
+ - 上篇文章，我已经配置好了后端master(192.168.2.58)，slave1(192.168.2.218)，slave2(192.168.2.228)的GTID主从复制[点击跳转](https://https://blog.yutao.co/blog/2022/04/08/MySQL-GTID%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6.html)
 
  
 ## 使用mysqlrouter配置读写分离
@@ -246,9 +246,12 @@ ip add命令查看到虚拟IP地址192.168.2.31
 ## 验证双vip是否能在master和backup上漂移
 
 在node1上停止Keepalived服务
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/b72a3741afbe4a09a9c6d144f2786ad2.png)
 node1 192.168.2.30 漂移到了node2
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/ea1792cc38184a77850846f75e6e76ba.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+
 开启node1keepalived服务后，又漂移回去。
 
 ## Windows检验通过keepalived高可用vip操作数据库
