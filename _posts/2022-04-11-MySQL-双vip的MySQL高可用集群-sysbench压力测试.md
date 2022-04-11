@@ -282,6 +282,26 @@ sysbench --threads=64 --time=600 --histogram=on --mysql_host=192.168.2.30 --mysq
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/34ae6001477d49edab85e1d509107258.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
 可以看到master的mysqld进程，node的mysqlrouter进程cpu使用率突升
 
+压力测试后考虑下优化思路
+
+## MySQL优化思路
+
+- 升级硬件
+- 优化操作系统：优化linux的内核参数，网络参数，文件系统的参数
+- 优化MySQL的参数：例如buffer-pool的大小等其他参数
+- 优化SQL语句
+- 加缓冲，加中间件，读写分离
+- 分表分库
+- 加索引
+
+## 垂直切分
+库：将一台机器的库，分到多个机器
+表：将表的字段拆分（一个表垂直切开）
+
+## 水平切分
+库：将多个表分散到多个库中
+表：不同的行分到不同的表。
+
 # 项目心得
 
 -  一定要规划好整个集群的架构,配置要细心,脚本要提前准备好,边做边修改。
