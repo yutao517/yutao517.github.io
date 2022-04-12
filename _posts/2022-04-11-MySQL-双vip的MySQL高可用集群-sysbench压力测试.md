@@ -34,13 +34,16 @@ mermaid: true
 主机性能有限，所学知识有限，我这里使用了5台Centos服务器，其中两台中间件服务器，一台master，两台slave，一台Ubuntu服务器用于y压力测试检验(centos也行，只是我刚好剩一台Ubuntu)。
 
 # 详细步骤
+
  ![在这里插入图片描述](https://img-blog.csdnimg.cn/31a3f752c6694e8a99c49b25d8e1e39d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
 
  ## GTID主从复制
+
  - 上篇文章，我已经配置好了后端master(192.168.2.58)，slave1(192.168.2.218)，slave2(192.168.2.228)的GTID主从复制[点击跳转](https://blog.yutao.co/blog/2022/04/08/MySQL-GTID%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6.html)
 
  
 ## 使用mysqlrouter配置读写分离
+
 node1和node2配置一样
 	
 ```bash
