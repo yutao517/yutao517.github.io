@@ -25,7 +25,7 @@ mermaid: true
 - 在3台MySQL服务器上配置好主从复制,建立读写分离使用的用户，形成一个master+2个slave节点的集群,提供数据库服务，部署一台延迟备份的服务器（延迟60分钟）
 - ~~尝试部署mysql的failover插件，实现自动的故障切换，确保naster宕机能自动提升另外一台slave为主，另外一台slave切换到新的mater上获得二进制日志。~~ 
 
-- ~~验证测试读写分离和高可用以及主从的failover|~~ 
+- 验证测试读写分离和高可用
 
 - 使用压力测试软件(sysbench)测试整个MySQL集群的性能（并发性能指标QPS、TPS、IOPS）
 
