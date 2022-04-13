@@ -81,7 +81,9 @@ IP：
 
 -  **安装docker容器**
 （docker又是一个DNAT原理）
+
 ```bash
+
 yum install -y yum-utils
 yum-config-manager \
     --add-repo \
