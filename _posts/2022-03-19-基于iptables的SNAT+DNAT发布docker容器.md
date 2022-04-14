@@ -143,7 +143,7 @@ flush privileges;
 ```
 
 实验结果:
-Windows主机输入190.168.2.188访问到容器里的nginx页面
+Windows主机输入192.168.2.188访问到容器里的nginx页面
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/8f896d83656b4d14af957f6e524f4ef8.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_16,color_FFFFFF,t_70,g_se,x_16)
 
 Windows主机远程登录容器的数据库
