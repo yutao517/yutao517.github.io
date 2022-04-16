@@ -69,3 +69,10 @@ scp /root/test/scan.sh root@121.36.40.218:~/
 因为已经scp传输了该文件，所以是绿色字体可以理解为覆盖，黄色字体是改变，红色字体说明错误。
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/d91b024509ef4a3796e5af373354da73.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+```bash
+ansible all -m script -a '~/weixin.sh wangyutao' 
+#在我的ansible主机目录下刚好有一个脚本，用assible让所有远程主机运行一下。
+```
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/40c1e53b89224638b5ed25f007d2ee07.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
