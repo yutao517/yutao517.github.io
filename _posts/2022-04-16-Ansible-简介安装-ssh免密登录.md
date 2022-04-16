@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Ansible-简介安装-ssh免密登录
+title: Ansible-简介安装+免密通道
 tags: Ansible
 category: blog
 date: 2022-04-16 21:19:00 +08:00
