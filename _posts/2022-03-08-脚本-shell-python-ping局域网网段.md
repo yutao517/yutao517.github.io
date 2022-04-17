@@ -1,7 +1,7 @@
 ---
 layout: article
 title: 计算机网络-ping局域网网段
-tags: 计算机网络 shell Python
+tags: 计算机网络 Shell Python
 category: blog
 date: 2022-03-08 00:00:00 +08:00
 mermaid: true
