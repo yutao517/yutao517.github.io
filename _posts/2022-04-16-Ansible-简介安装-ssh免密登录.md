@@ -7,7 +7,7 @@ date: 2022-04-16 21:19:00 +08:00
 mermaid: true
 ---
 ## 简介
-**Ansible**是一个基于Python开发的自动化运维工具，实现批量系统配置、批量程序部署、批量运行命令，本身没有批量部署的能力，真正具有批量部署的是ansible所运行的模块，ansible只是提供一种框架。ansible基于ssh来和远程主机通讯，不需要在远程主机上安装client/agents。
+**Ansible**是一个基于Python开发的自动化运维工具，实现批量系统配置、批量程序部署、批量运行命令，本身没有批量部署的能力，真正具有批量部署的是ansible所运行的模块，ansible只是提供一种框架。使用Python里的paramiko和sshpassansible库，基于ssh来和远程主机通讯，不需要在远程主机上安装client/agents。
 
 ![架构图](https://img-blog.csdnimg.cn/903ec28be2d24e6b956473cae7a3488b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
 
