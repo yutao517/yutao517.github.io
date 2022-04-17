@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Supervisor-守护管理进程状态实现自动重启
+title: Supervisor-进程守护实现监控自动重启
 tags: Supervisor
 category: blog
 date: 2022-04-17 15:55:00 +08:00
