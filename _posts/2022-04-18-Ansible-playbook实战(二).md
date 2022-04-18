@@ -17,8 +17,11 @@ cp redis.conf redis.conf.j2
 vim redis.conf.j2 
 #编辑变量使其成为模版
 :61 #进入第61行绑定IP地址的一行
+
 bind {{ansible_facts['eth0']['ipv4']['address']}}
+
 :84
+
 port {{redis_port}}
 #设置IP地址端口为变量
 ```
