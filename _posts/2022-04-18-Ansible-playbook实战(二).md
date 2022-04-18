@@ -16,9 +16,9 @@ cp redis.conf redis.conf.j2
 #复制配置文件为redis.conf.j2 
 vim redis.conf.j2 
 #编辑变量使其成为模版
-bind {{ansible_facts['eth0']['ipv4']['address']}}
+>bind {{ansible_facts['eth0']['ipv4']['address']}}
 #第61行
-port {{redis_port}}
+>port {{redis_port}}
 #第84行，设置IP地址端口为变量
 ```
 
