@@ -23,7 +23,7 @@ sudo curl -L "https://get.daocloud.io/docker/compose/releases/download/1.29.2/do
 chmod +x /usr/local/bin/docker-compose
 docker-compose -v
 ```
-## 入门
+## 操作
 创建目录
 ```bash
 mkdir /root/composetest
