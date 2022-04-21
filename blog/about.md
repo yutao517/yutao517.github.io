@@ -19,6 +19,6 @@ key: page-about
 
 - [WordPress站点](https://yutao.art.blog/)
 - [CSDN](https://blog.csdn.net/weixin_46415378)
-- [监控](http:cs.yutao.co/zabbix/)
+- [Zabbix](http:cs.yutao.co/zabbix/)
 
 ---
