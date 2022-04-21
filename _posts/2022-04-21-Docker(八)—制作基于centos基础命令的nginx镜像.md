@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Docker(八)——制作基于centos基础命令的nginx镜像
+title: Docker(八)—制作基于centos基础命令的nginx镜像
 tags: Docker
 category: blog
 date: 2022-04-21 15:10:00 +08:00
