@@ -103,6 +103,13 @@ server的端口号10051(agent 10050)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/c4557b50402d466cb2bf24121dbbe402.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_14,color_FFFFFF,t_70,g_se,x_16)
 > 默认的用户名：Admin 默认的密码：zabbix
 
+```
+mysql>use zabbix;
+mysql>select * from users\G;
+mysql>update users set passwd=md5('zabbix') where userid='1';
+#可以修改初始密码
+```
+
 User setings
 设置语言为中文
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/1ef901dcb88d425e9c0cb3671105480c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
