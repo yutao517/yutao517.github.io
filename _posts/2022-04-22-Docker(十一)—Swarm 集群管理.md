@@ -59,7 +59,7 @@ docker images
 我使用昨天创建的WordPress镜像，启动服务
 
 ```bash
-docker service create --replicas 10 --name nginx -p 7000:80 wordpress
+docker service create --replicas 10 --name wordpress -p 7000:80 wordpress
 
 #使用wordpress为镜像，名为wordpress的服务，启动10个实例，将宿主机的7000端口映射到容器的80端口
 ```
