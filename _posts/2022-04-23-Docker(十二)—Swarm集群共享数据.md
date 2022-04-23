@@ -42,38 +42,39 @@ docker service create -d --replicas 3 --mount type=volume,src=yutao,dst=/usr/sha
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/c7b347c8e29348d69c0b19ff7b11605f.png)
 
-**浏览器访问都成功挂载数据卷**
+**浏览器访问**
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/31a4dcfc06cc43cb9a8a3584569376f5.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20438fcd94a648a59708f0bfbf7d4ffa.png)
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/5ae22a8fe6a8461d9e1b482153113ac2.png)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/82ae8ebf8522438d9a76a592e4e7d829.png)
+实际上，改了一台manager的web内容，访问manager是随机性页面，除非三台主机都修改web页面。所以内部可能有负载均衡机制。
 
 
 ## Swarm集群使用NFS
-[搭建NFS服务器过程](https://blog.yutao.co/blog/2022/04/12/Nginx-%E6%90%AD%E5%BB%BANFS%E6%9C%8D%E5%8A%A1%E5%99%A8.html)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/99d1cb1b3a2f4fa893306b4dd135391f.png)
 
 **容器使用NFS**
 
-nfs服务器
+nfs服务器（192.168.2.58）
 ```bash
 yum install nfs-utils -y
 service nfs-server start
-vim /etc/exports
->/web 192.168.2.0/24(rw,all_squash,sync)
 mkdir /web
 vim /web/index.html
->yutao 
+>wang
 exportfs -rv
 chmod a+w /web
 ```
 容器manager主机
 
 ```bash
-docker volume create nfs
-#创建数据卷
-mount 192.168.2.58:/web /var/lib/docker/volumes/nfs/_data/
-#数据卷挂载到NFS服务器
-docker service create -d --replicas 3 --mount type=volume,src=nfs,dst=/usr/share/nginx/html --name  nfs-nginx -p 8010:80 nginx
-#启动服务
+docker service create --name nfs-service     --mount 'type=volume,source=nfsvolume,target=/usr/share/nginx/html,volume-driver=local,volume-opt=type=nfs,volume-opt=device=:/web,"volume-opt=o=addr=192.168.2.58,rw,nfsvers=4,async"' -dp 8010:80 --replicas 3 nginx:latest
 ```
+可以看到使用nfs服务器页面一致
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/47cee75acfbd44d79f454a8bac884e04.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/50e6cd4114464f05bb1eb32a688f510e.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/f1214f24dd2248d39a146f39514c796f.png)
+
