@@ -78,3 +78,30 @@ docker service create --name nfs-service     --mount 'type=volume,source=nfsvolu
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/50e6cd4114464f05bb1eb32a688f510e.png)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/f1214f24dd2248d39a146f39514c796f.png)
 
+## 退群
+worker主机
+```bash
+docker swarm leave 
+#退出swarm集群
+```
+manager主机
+
+```bash
+docker node ls
+```
+![在这里插入图片描述](https://img-blog.csdnimg.cn/be20cdf41749414cb695e946ef46b6c4.png)
+
+删除down掉的主机
+
+```bash
+docker node rm azure
+```
+![在这里插入图片描述](https://img-blog.csdnimg.cn/5f423e587afa4dfb8d62aa371f393de8.png)
+
+## 滚动升级
+
+```shell
+docker service update --image nginx:latest nginx
+#升级nginx服务的镜像到最新状态
+```
+
