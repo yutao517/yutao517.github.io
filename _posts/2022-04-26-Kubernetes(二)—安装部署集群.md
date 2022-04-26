@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Kubernetes—安装部署集群
+title: Kubernetes(二)—安装部署集群
 tags: Kubernetes
 category: blog
 date: 2022-04-26 22:14:00 +08:00
