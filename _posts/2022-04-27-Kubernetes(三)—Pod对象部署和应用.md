@@ -36,7 +36,13 @@ master访问10.244.1.4
 
 nginx服务已经在k8s集群中启动，但是并没有暴露端口，所以外界无法访问。
 
-## Pod结点删除
+## Pod扩缩
+
+```bash
+kubectl scale deployment/k8s-nginx --replicas 10
+#扩容到10个pod也可以缩小
+```
+## Pod节点删除
 
 ```bash
 kubectl delete pod k8s-nginx-6d779d947c-5zt6x 
