@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Kubernetes(官方实例)—Pod分配内存资源
+title: Kubernetes(官方实例)—分配内存资源
 tags: Kubernetes
 category: blog
 date: 2022-04-27 20:30:00 +08:00
