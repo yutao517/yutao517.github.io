@@ -48,6 +48,6 @@ kubectl scale deployment/k8s-nginx --replicas 10
 kubectl delete pod k8s-nginx-6d779d947c-5zt6x 
 #删除名为k8s-nginx-6d779d947c-5zt6x的pod
 ```
-在Kubernetes集群中，由于该Pod被Controller控制器所控制，因此我们尽管能够删除该Pod对象，但是replica controller副本控制器会再次创建Pod对象。如下图：
+在Kubernetes集群中，由于该Pod被Controller控制器所控制，因此我们尽管能够删除该Pod对象，但是Controller控制器会再次创建Pod对象。如下图：
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/3e228acc4b884372a38409493fb2dcbd.png)
