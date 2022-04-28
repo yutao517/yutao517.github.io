@@ -25,6 +25,15 @@ mermaid: true
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/003ab3bb40db4bcf8bbdbed65dd203ee.png)
 
+## Pod重启策略
+
+Pod的重启策略包括：Always、OnFailure和Never，默认值为Always。
+
+- Always：当容器失效时，由kubelet自动重启该容器。
+- OnFailure：当容器终止运行且退出码不为0时，由kubelet自动重启该容器。
+- Never：不论容器运行状态如何，kubelet都不会重启该容器。
+
+
 ## 容器状态
 
 容器的状态有三种：Waiting（等待）、Running（运行中）和 Terminated（已终止）。
