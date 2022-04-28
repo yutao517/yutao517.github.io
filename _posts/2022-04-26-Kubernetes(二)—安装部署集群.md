@@ -146,7 +146,7 @@ kubectl get nodes
 ```bash
 kubectl get pods -n kube-system -o wide
 ```
-### master安装网络插件fanel
+### master安装网络插件flanel
 
 ```bash
 wget https://raw.githubusercontent.com/yutao517/code/main/kube-flannel.yml
