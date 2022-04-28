@@ -125,6 +125,10 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubeadm join 192.168.2.248:6443 --token m5p64y.x4x1k0hthzic9ss4 \
 	--discovery-token-ca-cert-hash sha256:6e43392975c729de140d8f11bb8375844461b19b3be1686f0453e64b43380fe4 
 ```
+默认token有效期为24小时，当过期之后，该token就不可用了。这时就需要重新创建token，可以直接使用命令快捷生成：
+```bash
+kubeadm token create --print-join-command
+```
 报错就重启docker服务，问题就会解决。
 
 master查看node节点状态
