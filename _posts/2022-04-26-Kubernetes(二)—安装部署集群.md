@@ -103,7 +103,7 @@ docker tag coredns/coredns registry.aliyuncs.com/google_containers/coredns
 
 ```bash
 kubeadm init \
---apiserver-advertise-address 192.168.2.248
+--apiserver-advertise-address 192.168.2.248 \
 --image-repository registry.aliyuncs.com/google_containers \
 --pod-network-cidr=10.244.0.0/16 \
 --service-cidr=10.1.0.0/16 
