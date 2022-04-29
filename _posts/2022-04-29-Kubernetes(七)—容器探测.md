@@ -1,3 +1,11 @@
+---
+layout: article
+title: Kubernetes(七)—容器探测
+tags: Kubernetes
+category: blog
+date: 2022-04-29 22:08:00 +08:00
+mermaid: true
+---
 [参考文档](https://kubernetes.io/zh/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
 ## 容器类型
 
