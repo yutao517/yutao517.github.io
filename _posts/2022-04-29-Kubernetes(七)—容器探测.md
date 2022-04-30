@@ -47,35 +47,3 @@ k8s已经支持四种类型的container：
 诊断失败，因此不会采取任何行动。
 
 
-## 存活性探测（livenessProbe)实战
-```bash
-apiVersion: v1
-kind: Pod
-metadata:
-  labels:
-    test: liveness
-  name: liveness-exec
-spec:
-  containers:
-  - name: liveness
-    image: busybox
-    args:
-    - /bin/sh
-    - -c
-    - touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 600
-    livenessProbe:
-      exec:
-        command:
-        - cat
-        - /tmp/healthy
-      initialDelaySeconds: 5
-      periodSeconds: 5
-```
-30s之后删除healthy文件，初始化后5s探针开始探/tmp/healthy文件，周期为5s，30s之后删除healthy文件报错，重启。
-```bash
-kubectl apply -f liveness.yaml 
-```
-
-```bash
-kubectl describe pod liveness-exec
-```
