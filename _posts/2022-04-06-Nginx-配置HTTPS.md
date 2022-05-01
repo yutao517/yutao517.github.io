@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Nginx-配置https环境
+title: Nginx-配置HTTPS
 tags: Nginx
 category: blog
 date: 2022-04-06 000000 +0800
