@@ -77,3 +77,16 @@ Kubelet
 Kube-proxy
 
 - **Kube-Proxy** 是集群中每个节点上运行的网络代理，负责为Service对象生成iptables或者是ipvs规则，从而捕获访问该Service的数据流量，并将这些流量转发给后端的Pod对象，是实现 Kubernetes 服务（Service） 概念的一部分。
+
+## k8s的控制器
+- Deployment：适合无状态的服务部署
+- ReplicationController：确保任何时候都有特定的Pod处于运行状态。
+- ReplicaSet：确保任何时间都有指定的数量Pod在运行（Deployment已经包含该功能），被认为 是“升级版”的ReplicationController（简称为RC ），在新版本的 Kubernetes 中建议使用 ReplicaSet（简称为RS ）来取代 ReplicationController。ReplicaSet 和ReplicationController 没有本质的不同，只是名字不一样。
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/81fe199fa4ae4e429dd367c667f8438a.png)
+
+- SatefulSet：适合有状态的服务部署
+- Cron Job：周期性的执行任务，计划任务。
+- Job：运行批处理任务
+-  DaemonSet：确保全部或某些节点上运行一个Pod。当有节点加入集群时，也会为他们新增一个Pod。当节点从集群中移除时候，这些Pod也会被回收。主要用于运行存储插件、监控插件、日志插件。
+
