@@ -120,7 +120,7 @@ kubectl delete service my-nginx
 ```
 
 ```bash
-kubectl expose deployment/my-nginx --type="NodePort" --port=8080  --target-port=80 --name=my-nginxservice/my-nginx exposed
+kubectl expose deployment/my-nginx --type="NodePort" --port=8080  --target-port=80 --name=my-nginxservice
 ```
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/bedadab72e5f4c3f98c4554bd95ab74c.png)
