@@ -67,7 +67,11 @@ Docker 提供容器的⽣命周期管理和 Docker 镜像构建运⾏时容器�
 
 
 **Node 组件**
-- **Kubelet**
-**Kubelet**是运行在Kubernetes集群中Node结点上运行的**代理**，是一个守护进程， 它保证容器（containers）都运行在 Pod 中。
-- **Kube-proxy**
-**Kube-Proxy** 是集群中每个节点上运行的网络代理，负责为Service对象生成iptables或者是ipvs规则，从而捕获访问该Service的数据流量，并将这些流量转发给后端的Pod对象，是实现 Kubernetes 服务（Service） 概念的一部分。
+
+Kubelet
+
+- **Kubelet**是运行在Kubernetes集群中Node结点上运行的**代理**，是一个守护进程， 它保证容器（containers）都运行在 Pod 中。
+
+Kube-proxy
+
+- **Kube-Proxy** 是集群中每个节点上运行的网络代理，负责为Service对象生成iptables或者是ipvs规则，从而捕获访问该Service的数据流量，并将这些流量转发给后端的Pod对象，是实现 Kubernetes 服务（Service） 概念的一部分。
