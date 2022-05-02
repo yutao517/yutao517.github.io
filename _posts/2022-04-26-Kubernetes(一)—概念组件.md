@@ -68,6 +68,8 @@ Docker 提供容器的⽣命周期管理和 Docker 镜像构建运⾏时容器�
 
 ### Node 组件
 
+节点组件在每个节点上运行，维护运行的 Pod 并提供 Kubernetes 运行环境
+
 Kubelet
 
 - **Kubelet**是运行在Kubernetes集群中Node结点上运行的**代理**，是一个守护进程， 它保证容器（containers）都运行在 Pod 中。
