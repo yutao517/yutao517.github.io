@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Kubernetes(十一)——kube-proxy、Service
+title: Kubernetes(十)——kube-proxy、Service
 tags: Kubernetes
 category: blog
 date: 2022-05-02 14:50:00 +08:00
