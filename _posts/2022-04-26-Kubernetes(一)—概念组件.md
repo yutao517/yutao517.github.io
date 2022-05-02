@@ -24,7 +24,7 @@ Docker 提供容器的⽣命周期管理和 Docker 镜像构建运⾏时容器�
 
 ## 组件
 
-**控制平面组件（Control Plane Components）**：
+### 控制平面组件（Control Plane Components）：
 控制平面的组件也就是Master组件对集群做出全局决策(比如调度)，以及检测和响应集群事件（例如，当不满足部署的 replicas 字段时，启动新的控制平面组件可以在集群中的任何节点上运行）。
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/28cb4e9dc1d54de39c6684732d490123.png)
@@ -66,7 +66,7 @@ Docker 提供容器的⽣命周期管理和 Docker 镜像构建运⾏时容器�
 - **Service控制器**：用于创建、更新和删除云提供商负载均衡器
 
 
-**Node 组件**
+### Node 组件
 
 Kubelet
 
