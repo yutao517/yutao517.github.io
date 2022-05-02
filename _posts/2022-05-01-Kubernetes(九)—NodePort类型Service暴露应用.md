@@ -6,14 +6,6 @@ category: blog
 date: 2022-05-01 15:52:00 +08:00
 mermaid: true
 ---
-## Service资源
-尽管每个 Pod 都有一个唯一的 IP 地址，但是如果没有 Service ，这些 IP 不会暴露在集群外部。
-
-- ClusterIP：在集群的内部 IP 上公开 Service 。这种类型使得 Service 只能从集群内访问。
-- NodePort：使用 NAT 在集群中每个选定 Node 的相同端口上公开 Service
-- LoadBalancer： 在当前云中创建一个外部负载均衡器(如果支持的话)，并为 Service 分配一个固定的外部IP
-- ExternalName： 通过返回带有该名称的 CNAME 记录，使用任意名称公开 Service。
-
 
 [参考文档](https://kubernetes.io/zh/docs/concepts/services-networking/connect-applications-service/)
 ## 在集群中暴露 Pod 
