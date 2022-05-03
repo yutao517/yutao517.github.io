@@ -90,6 +90,7 @@ wget https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_e
 tar xvfz  node_exporter-1.3.1.linux-amd64.tar.gz -C /usr/local
 mv /usr/local/node_exporter-1.3.1.linux-amd64 /usr/local/node_exporter
 echo  "PATH=$PATH:/usr/local/node_exporter/" >>/root/.bashrc
+source /root/.bashrc
 nohup node_exporter &
 ```
 
