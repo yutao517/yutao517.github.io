@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Kubernetes(十二)——Metrics Server+Dashboard
+title: Kubernetes(十二)—Metrics Server+Dashboard
 tags: Kubernetes
 category: blog
 date: 2022-05-05 13:13:09 +08:00
