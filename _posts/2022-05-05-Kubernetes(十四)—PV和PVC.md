@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Kubernetes(十四)—PV和PVC.md
+title: Kubernetes(十四)—PV和PVC
 tags: Kubernetes
 category: blog
 date: 2022-05-05 19:58:15 +08:00
