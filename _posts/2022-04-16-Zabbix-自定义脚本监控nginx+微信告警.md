@@ -32,7 +32,7 @@ stub_status;}
 ```
 测试状态统计功能是否打开
 
-> http://192.168.2.58/wyt_status\
+> http://192.168.2.58/wyt_status
 
 **nginx端(zabbix客户端)编写监控脚本**
 
