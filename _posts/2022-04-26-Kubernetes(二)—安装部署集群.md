@@ -89,7 +89,7 @@ EOF
 ```
 
 ```bash
-yum install kubelet kubeadm kubectl -y
+yum install -y kubelet-1.23.6 kubeadm-1.23.6 kubectl-1.23.6
 ```
 
 ```bash
