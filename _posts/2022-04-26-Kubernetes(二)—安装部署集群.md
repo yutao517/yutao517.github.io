@@ -63,7 +63,7 @@ cat /etc/fstab
 ```
 
 ```bash
-su -root
+su 
 ```
 **添加解析记录**
 ```bash
