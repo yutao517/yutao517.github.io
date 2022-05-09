@@ -9,6 +9,7 @@ mermaid: true
 
 ## 部署一套完整的企业级高可用K8s集群
 Master节点主要有三个服务kube-apiserver、kube-controller-manager和kube-scheduler，其中kube-controller-manager和kube-scheduler组件自身通过选择机制已经实现了高可用，所以Master高可用主要针对kube-apiserver组件，而该组件是以HTTP API提供服务，因此对他高可用与Web服务器类似，对其负载均衡即可，并且可水平扩容，但是当Master节点有增减时，如何动态配置Node节点上的负载均衡器成为了另外一个需要解决的问题，负载均衡器本身就是一个单点故障隐患，所以这里使用keepalived。
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/478fe440e620419995432bac9ebd67ce.png)
 
 
@@ -59,6 +60,7 @@ hostnamectl set-hostname node3 && bash
 
 ```
 以下步骤所有主机都需要设置，所以建议用xshell连接全部6台主机，打开发送键输入所有会话的工具。当然也可以使用ansible。
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/3e5e80313171438c97ce5322f59e1588.png)
 
 所有主机设置/etc/hosts保证主机名能够解析，并设置github解析地址可加速国内使用，方便以后使用。
