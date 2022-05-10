@@ -495,9 +495,24 @@ curl -k https://192.168.2.68:16443/version
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/937923d9b98e47b7ab9f93fa68932bf3.png)
 
-[安装dashboard](https://blog.yutao.co/blog/2022/05/05/Kubernetes%28%E5%8D%81%E4%BA%8C%29-Metrics-Server+Dashboard.html)
+**安装图形化界面**
+
+
+[安装Dashboard](https://blog.yutao.co/blog/2022/05/05/Kubernetes%28%E5%8D%81%E4%BA%8C%29-Metrics-Server+Dashboard.html)
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/6f19ec1a0f8540b5b5440521ed9db6da.png)
+
+个人感觉Dashboard的效果不如Kuboard效果明显些
+
+[安装Kuboard](https://www.kuboard.cn/install/v3/install-in-k8s.html#%E5%AE%89%E8%A3%85)
+
+提前部署Metrics-Serve，否则无法采集到数据
+
+```bash
+kubectl apply -f https://download.yutao.co/mirror/components.yaml
+```
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/b9cf1e4717dd4db1b21a336d65012956.png)
 
 
 
