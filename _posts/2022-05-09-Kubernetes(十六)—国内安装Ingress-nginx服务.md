@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Kubernetes(十六)—Ingress-nginx服务
+title: Kubernetes(十六)—国内安装Ingress-nginx服务
 tags: Kubernetes
 category: blog
 date: 2022-05-09 21:40:00 +08:00
