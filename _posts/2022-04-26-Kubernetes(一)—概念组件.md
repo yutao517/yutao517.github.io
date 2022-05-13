@@ -85,7 +85,7 @@ Kube-proxy
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/81fe199fa4ae4e429dd367c667f8438a.png)
 
-- SatefulSet：适合有状态的服务部署
+- StatefulSet：适合有状态的服务部署
 - Cron Job：周期性的执行任务，计划任务。
 - Job：运行批处理任务
 -  DaemonSet：确保全部或某些节点上运行一个Pod。当有节点加入集群时，也会为他们新增一个Pod。当节点从集群中移除时候，这些Pod也会被回收。主要用于运行存储插件、监控插件、日志插件。
