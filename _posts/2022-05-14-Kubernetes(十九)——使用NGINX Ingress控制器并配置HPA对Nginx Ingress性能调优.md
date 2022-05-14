@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Kubernetes(十九)——使用NGINX Ingress控制器配置Ingress
+title: Kubernetes(十九)——使用NGINX Ingress控制器并配置HPA对Nginx Ingress性能调优
 tags: Kubernetes Project
 category: blog
 date: 2022-05-14 13:24:00 +08:00
@@ -207,3 +207,57 @@ curl hello-world.info/v2
 ```
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/d2965d20c39c444b9b4fc3268ee7f3fe.png)
+
+## 配置HPA对Nginx Ingress性能调优
+
+Nginx参数调优：
+
+- 调整单个Worker的最大连接数
+
+- 增加连接超时时间
+
+**按照负载配置HPA进行自动扩容**
+
+```bash
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: ingress-nginx-controller-hpa
+  namespace: ingress-nginx
+spec:
+  maxReplicas: 10 #最大副本数
+  minReplicas: 2 #最小副本数
+  metrics:
+    # 设置触发伸缩的 CPU 利用率
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          averageUtilization: 50
+          type: Utilization
+    # 设置触发伸缩的 MEM 利用率
+    - type: Resource
+      resource:
+        name: memory
+        target:
+          averageUtilization: 75
+          type: Utilization     
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment #需要伸缩的资源类型
+    name: ingress-nginx-controller  #需要伸缩的资源名称
+```
+
+```bash
+kubectl get hpa -n ingress-nginx
+```
+![在这里插入图片描述](https://img-blog.csdnimg.cn/f76497f07531473db0d1cfe56d5c8ed5.png)
+
+```bash
+kubectl get pod -n ingress-nginx
+```
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/dd0c2a3e3c664adfb346d61a42659dc0.png)
+
+可以看到Pod数量增加，内存和CPU均保持在规定利用率
+
