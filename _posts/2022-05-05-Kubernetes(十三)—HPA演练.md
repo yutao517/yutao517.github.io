@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Kubernetes(十三)—HPA演练
-tags: Kubernetes
+tags: Kubernetes Project
 category: blog
 date: 2022-05-05 14:59:09 +08:00
 mermaid: true
