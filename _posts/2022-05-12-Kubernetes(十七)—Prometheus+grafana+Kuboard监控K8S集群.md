@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Kubernetes(十七)—Prometheus+grafana+Kuboard监控K8S集群
-tags: Kubernetes Prometheus 项目
+tags: Kubernetes Prometheus Project
 category: blog
 date: 2022-05-12 12:19:00 +08:00
 mermaid: true
