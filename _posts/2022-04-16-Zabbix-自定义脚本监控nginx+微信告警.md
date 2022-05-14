@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Zabbix-自定义脚本监控nginx+微信告警
-tags: Zabbix Nginx 项目
+tags: Zabbix Nginx Project
 category: blog
 date: 2022-04-16 15:00:00 +08:00
 mermaid: true
