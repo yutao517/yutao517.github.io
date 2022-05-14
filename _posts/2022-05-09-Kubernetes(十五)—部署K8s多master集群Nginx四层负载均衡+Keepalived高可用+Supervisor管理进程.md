@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Kubernetes(十五)—部署K8s多master集群Nginx四层负载均衡+Keepalived高可用+Supervisor管理进程
-tags: Kubernetes 项目
+tags: Kubernetes Project
 category: blog
 date: 2022-05-09 20:40:00 +08:00
 mermaid: true
