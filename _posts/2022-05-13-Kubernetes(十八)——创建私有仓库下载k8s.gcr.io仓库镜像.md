@@ -1,6 +1,6 @@
 ---
 layout: article
-title: -Kubernetes(十八)——创建私有仓库下载k8s.gcr.io仓库镜像
+title: Kubernetes(十八)——创建私有仓库下载k8s.gcr.io仓库镜像
 tags: Kubernetes
 category: blog
 date: 2022-05-13 20:39:00 +08:00
