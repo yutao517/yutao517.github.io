@@ -111,6 +111,7 @@ kubectl apply -f hello-svc.yaml
 kubectl expose deployment web --type=NodePort --port=8080
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/963da36dd86e4a19ad081b5f92a1c6ea.png)
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/257cd1a57eec401db81c6cbdde52f7e5.png)
 
 ## 创建Ingress
@@ -152,7 +153,9 @@ kubectl get ingress
 ```
 
 看到IP ADDRESS
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/594d1da66a6b41a19b6d59a0ff2c8eb9.png)
+
 添加域名解析规则
 ```bash
 cat <<EOF >>/etc/hosts
@@ -165,6 +168,7 @@ curl hello-world.info
 curl 10.10.121.81
 ```
 检验效果的不同，发现域名正常访问，但是IP无法访问，因为hello-ingress.yaml只设置了域名host的指向，没有设置IP
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/0932b281ad21470ab1874bf1d8462a0b.png)
 
 ## 创建第二个 Deployment
