@@ -1,7 +1,7 @@
 ---
 layout: article
 title: MySQL-双vip的MySQL高可用集群-sysbench压力测试
-tags: MySQL数据库 项目
+tags: MySQL数据库 Project
 category: blog
 date: 2022-04-11 20:36:00 +08:00
 mermaid: true
