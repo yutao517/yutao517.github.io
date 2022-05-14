@@ -516,6 +516,8 @@ kubectl apply -f https://download.yutao.co/mirror/components.yaml
 
 
 
+[Prometheus—Alertmanager+Grafana实现企业微信告警和Webhook机器人(钉钉机器人和微信机器人)告警](https://blog.yutao.co/blog/2022/05/12/Prometheus-Alertmanager+Grafana%E5%AE%9E%E7%8E%B0%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E5%91%8A%E8%AD%A6%E5%92%8CWebhook%E6%9C%BA%E5%99%A8%E4%BA%BA%28%E9%92%89%E9%92%89%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%92%8C%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA%29%E5%91%8A%E8%AD%A6.html)
+
 
 
 
