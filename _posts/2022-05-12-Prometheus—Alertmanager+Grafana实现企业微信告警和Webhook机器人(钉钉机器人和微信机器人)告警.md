@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Prometheus—Alertmanager+Grafana实现企业微信告警和Webhook机器人(钉钉机器人和微信机器人)告警
-tags: Kubernetes Prometheus 项目
+tags: Kubernetes Prometheus Project
 category: blog
 date: 2022-05-12 20:21:00 +08:00
 mermaid: true
