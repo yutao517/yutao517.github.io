@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Kubernetes(十九)——使用NGINX Ingress控制器配置Ingress
-tags: Kubernetes
+tags: Kubernetes Project
 category: blog
 date: 2022-05-14 13:24:00 +08:00
 mermaid: true
