@@ -67,7 +67,7 @@ kubectl apply -f deploy.yaml
 
 [使用阿里云容器镜像仓库方法](https://blog.yutao.co/blog/2022/05/13/Kubernetes(%E5%8D%81%E5%85%AB)-%E5%88%9B%E5%BB%BA%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%E4%B8%8B%E8%BD%BDk8s.gcr.io%E4%BB%93%E5%BA%93%E9%95%9C%E5%83%8F.html)
 
-下面是通过链接方法自建好的阿里云镜像可以直接部署ingress-nginx
+已经自建好阿里云镜像可以直接部署ingress-nginx
 
 
 ```bash
