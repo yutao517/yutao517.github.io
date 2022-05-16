@@ -369,7 +369,7 @@ systemctl status keepalived
 **配置Supervisor管理进程**
 在该脚本中，如果nginx恢复并不会重启keepalived，因为只有keepalived运行的时候才会运行脚本，所以只能停止keepalived服务，而不能重启。
 可以在三台master配置Supervisor，通过Supervisor管理nginx，check_nginx.sh的进程，当nginx意外被 Kill 时，Supervisor 会自动将nginx重启，nginx恢复时，Supervisor 会通过脚本自动将keepalived重启，可以很方便地做到进程自动恢复的目的，而无需自己编写 shell 脚本来管理进程。
-[配置教程](https://blog.yutao.co/blog/2022/04/17/Supervisor-%E8%BF%9B%E7%A8%8B%E5%AE%88%E6%8A%A4%E7%9B%91%E6%8E%A7.html)
+[详细步骤](https://blog.yutao.co/blog/2022/04/17/Supervisor-%E8%BF%9B%E7%A8%8B%E5%AE%88%E6%8A%A4%E7%9B%91%E6%8E%A7.html)
 
 **检测VIP漂移现象**
 
