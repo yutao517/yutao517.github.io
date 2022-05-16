@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Kubernetes(二十)—使用Configmap+HPA调优Nginx的Ingress服务并使用PV+PVC的NFS服务器验证
+title: Kubernetes(二十)—使用Configmap+HPA调优Ingress并使用PV+PVC的NFS网络挂载验证+ab压力测试
 tags: Kubernetes Project
 category: blog
 date: 2022-05-16 18:47:00 +08:00
