@@ -39,7 +39,10 @@ kubectl get pod -n ingress-nginx
 
 ## 部署一个 Hello World 应用
 
-[官方文档](https://kubernetes.io/zh/docs/tasks/access-application-cluster/ingress-minikube/)
+参照[官方文档](https://kubernetes.io/zh/docs/tasks/access-application-cluster/ingress-minikube/)
+
+本节yaml源码地址
+[https://download.yutao.co/k8s/ingress-project/hello-world-tomcat/](https://download.yutao.co/k8s/ingress-project/hello-world-tomcat/)
 
 **创建Deployment**
 
