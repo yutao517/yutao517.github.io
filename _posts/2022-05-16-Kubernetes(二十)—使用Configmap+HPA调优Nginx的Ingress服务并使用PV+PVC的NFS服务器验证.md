@@ -526,6 +526,18 @@ spec:
 kubectl apply -f  nginx-pv-ingress.yaml
 ```
 
+### 验证基于服务路径的路由的负载均衡效果
+
+```bash
+curl hello-world.info/hostpath
+curl hello-world.info/hostpath
+curl hello-world.info/hostpath
+curl hello-world.info/hostpath
+curl hello-world.info/hostpath
+curl hello-world.info/hostpath
+curl hello-world.info/nfs
+```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/159fd99dc96349f8b44eb965a5ddff53.png)
 
 ## 使用Configmap调优
