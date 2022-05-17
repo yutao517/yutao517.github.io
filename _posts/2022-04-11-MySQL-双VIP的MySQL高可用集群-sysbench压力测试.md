@@ -31,7 +31,7 @@ mermaid: true
 
 ## 实际情况：
 
-主机性能有限，所学知识有限，我这里使用了5台Centos服务器，其中两台中间件服务器，一台master，两台slave，一台Ubuntu服务器用于y压力测试检验(centos也行，只是我刚好剩一台Ubuntu)。
+主机性能有限，所学知识有限，我这里使用了5台Centos服务器，其中两台中间件服务器，一台master，两台slave，一台Ubuntu服务器用于压力测试检验(centos也行，只是我刚好剩一台Ubuntu)。
 
 # 详细步骤
 
