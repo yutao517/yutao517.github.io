@@ -15,7 +15,7 @@ mermaid: true
 
 ```bash
 docker pull registry.cn-hangzhou.aliyuncs.com/yutao517/ingress_nginx_controller:v1.1.0
-docker tag registry.cn-hangzhou.aliyuncs.com/yutao517/ingress_nginx_controller:v1.1.0  k8s.gcr.io/ingress-nginx/controller:v1.1.1
+docker tag registry.cn-hangzhou.aliyuncs.com/yutao517/ingress_nginx_controller:v1.1.0  k8s.gcr.io/ingress-nginx/controller:v1.1.0
 
 docker pull registry.cn-hangzhou.aliyuncs.com/yutao517/kube_webhook_certgen:v1.1.1
 docker tag registry.cn-hangzhou.aliyuncs.com/yutao517/kube_webhook_certgen:v1.1.1  k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1
