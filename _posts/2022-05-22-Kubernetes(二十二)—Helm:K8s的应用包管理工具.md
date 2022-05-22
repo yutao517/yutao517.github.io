@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Kubernetes(二十二)——Helm:K8s的应用包管理工具
+title: Kubernetes(二十二)—Helm:K8s的应用包管理工具
 tags: Kubernetes
 category: blog
 date: 2022-05-22 19:25:00 +08:00
