@@ -26,7 +26,7 @@ mermaid: true
 
 ## 配置对Harbor的HTTPS访问
 
-域名解析到服务器服务器从阿里云申请证书下载密钥之后将密钥上传到服务器/root/harbor/(申请方法自行百度)
+域名解析到服务器，服务器从阿里云申请证书下载密钥之后将密钥上传到服务器/root/harbor/(申请方法自行百度)
 [参考](https://blog.yutao.co/blog/2022/04/06/Nginx-%E9%85%8D%E7%BD%AEHTTPS.html)
 
 ```bash
