@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Linux—HTTP代理
+title: Linux配置HTTP代理
 tags: Linux 
 category: blog
 date: 2022-05-27 20:30:00 +08:00
