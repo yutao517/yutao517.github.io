@@ -1,3 +1,11 @@
+---
+layout: article
+title: Linux—HTTP代理
+tags: Linux 
+category: blog
+date: 2022-05-27 20:30:00 +08:00
+mermaid: true
+---
 配置代理科学上网，访问Github
 ```bash
 vim /etc/profile
