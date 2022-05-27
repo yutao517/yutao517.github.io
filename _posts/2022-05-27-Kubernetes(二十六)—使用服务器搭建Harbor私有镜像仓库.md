@@ -93,6 +93,9 @@ docker-compose -v
 docker-compose up -d
 ```
 
+docker-compose down -v 命令可以停止实例
+
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/cde06e1a21e94844b19325165194a7e8.png)
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/e3c922b89caf40ac8119f172352fb9d1.png)
