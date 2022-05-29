@@ -19,7 +19,6 @@ key: page-about
 
 - [Harbor仓库](https://harbor.yutao.co/)
 - [CSDN](https://blog.csdn.net/weixin_46415378)
-- [Zabbix](http:cs.yutao.co/zabbix/)
 - [WordPress站点](https://yutao.art.blog/)
 
 ---
