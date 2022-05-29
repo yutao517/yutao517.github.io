@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Kubernetes(二十六)—使用服务器搭建Harbor私有镜像仓库
+title: 部署Harbor私有镜像仓库
 tags: Kubernetes Project
 category: blog
 date: 2022-05-27 20:39:00 +08:00
