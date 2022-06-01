@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Kubernetes(二十八)—Kubernetes(二十六)—IPv4\IPv6 双协议栈
+title: Kubernetes(二十六)—IPv4\IPv6 双协议栈
 tags: Kubernetes
 category: blog
 date: 2022-06-01 18:34:00 +08:00
