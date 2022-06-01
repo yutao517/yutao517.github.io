@@ -25,6 +25,7 @@ gitlab本身也是一个代码托管的网站，功能上和github没有区别�
 
 ## 部署Git服务
 
+
 ```bash
 yum install git git-core gitweb -y
 useradd git
