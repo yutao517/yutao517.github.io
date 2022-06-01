@@ -500,4 +500,5 @@ kubectl apply -f gitlab-admin-service-account.yaml
 ```yaml
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep gitlab-admin | awk '{print $1}')
 ```
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/3bced809873644a28f2e41f5caced275.png)
