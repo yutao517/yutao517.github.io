@@ -115,14 +115,23 @@ mermaid: true
 ```
 配置文件改为any
 >  options {
+>  
 >         listen-on port 53 { any; };
+>         
 >         listen-on-v6 port 53 { any; };
+>         
 >         directory       "/var/named";
+>         
 >         dump-file       "/var/named/data/cache_dump.db";
+>         
 >         statistics-file "/var/named/data/named_stats.txt";
+>         
 >         memstatistics-file "/var/named/data/named_mem_stats.txt";
+>         
 >         recursing-file  "/var/named/data/named.recursing";
+>         
 >         secroots-file   "/var/named/data/named.secroots";
+>         
 >         allow-query     { any; };
 
 ```bash
