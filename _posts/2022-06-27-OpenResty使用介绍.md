@@ -1,6 +1,6 @@
 ---
 layout: article
-title: OpenResty使用介绍.md
+title: OpenResty使用介绍
 tags: Nginx OpenResty
 category: blog
 date: 2022-06-27 17:48:20 +08:00
