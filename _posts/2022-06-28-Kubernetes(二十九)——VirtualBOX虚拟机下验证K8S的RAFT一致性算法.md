@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Kubernetes(二十九)——VirtualBOX虚拟机下验证K8S的RAFT一致性算法
+title: Kubernetes(二十九)—VirtualBOX虚拟机下验证K8S的RAFT一致性算法
 tags: Kubernetes
 category: blog
 date: 2022-06-28 18:34:00 +08:00
