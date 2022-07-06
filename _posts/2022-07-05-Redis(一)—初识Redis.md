@@ -35,6 +35,7 @@ Redis是一种基于键值对(key-value)的NoSQL数据库
 yum install gcc tcl -y
 wget https://download.redis.io/releases/redis-6.2.7.tar.gz
 mv redis-6.2.7.tar.gz /usr/local/src/
+cd /usr/local/src
 tar -zxvf redis-6.2.7.tar.gz
 cd redis-6.2.7
 make && make install
