@@ -1,6 +1,6 @@
 ---
 layout: article
-title: 阿里云云原生容器工程师ACP认证(三)—容器服务Kubernetes版ACK Pro集群
+title: 阿里云云原生容器工程师ACP认证(三)—容器服务ACK Pro集群
 tags: 阿里云云原生容器工程师 Kubernetes Docker
 category: blog
 date: 2022-07-07 14:14:00 +08:00
