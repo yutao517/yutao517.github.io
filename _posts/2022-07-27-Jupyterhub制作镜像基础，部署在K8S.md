@@ -8,6 +8,25 @@ mermaid: true
 ---
 # 无服务平台
 
+**微软AZURE的Azure Functions**
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/bb5db8d1d86744bfb60e583ddbabf92c.png)
+
+阿里云函数计算 FC
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/3e9f36bc5f334ed3a5d227f0ac376a0f.png)
+
+腾讯云Serverless
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/b6089080b01b4aaf912fc91ae39bc5dd.png)
+有终端
+
+华为云函数工作流
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/0b0a16ae9dd34314bfd896ec5c384c92.png)
+
+无终端
+
 # 主机安装配置
 
 ```bash
