@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Jupyterhub加装Go内核
-tags: Jupuyerhub
+tags: Jupyterhub
 category: blog
 date: 2022-07-27 17:05:00 +08:00
 mermaid: true
