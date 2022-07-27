@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Jupyterhub制作镜像基础，部署在K8S
+title: Jupyterhub制作镜像基础Helm在K8S
 tags: Jupyterhub
 category: blog
 date: 2022-07-27 17:02:00 +08:00
