@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Jupyterhub的LDAP打通OSS.md
+title: Jupyterhub的LDAP打通OSS
 tags: Jupyterhub
 category: blog
 date: 2022-07-27 17:16:00 +08:00
