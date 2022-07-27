@@ -46,6 +46,8 @@ docker run --name prometheus -dp 9090:9090 prom/prometheus
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/73e9a1d599d0433ab37a4793feb91f3e.png)
 
 ```bash
+rm -rf /etc/localtime
+ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 yum install ntp ntpdate -y
 #安装ntpdate工具
 ntpdate cn.pool.ntp.org
