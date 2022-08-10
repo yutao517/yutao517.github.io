@@ -1,0 +1,162 @@
+---
+layout: article
+title: Curve(一)—调研及差异化
+tags: JuiceFS
+category: blog
+date: 2022-08-10 13:29:00 +08:00
+mermaid: true
+---
+## 参考文档
+
+传统NAS(软硬一体方案)：单点故障；控制器瓶颈；共享受限；横向扩展困难
+
+DataFunSummit 演讲JuiceFS实录：[https://juicefs.com/blog/cn/posts/juicefs-intro-on-datafunsummit/](https://juicefs.com/blog/cn/posts/juicefs-intro-on-datafunsummit/)
+
+JuiceFS官方分布式文件系统对比：[https://juicefs.com/blog/cn/posts/distributed-filesystem-comparison/](https://juicefs.com/blog/cn/posts/distributed-filesystem-comparison/)
+
+  [https://juicefs.com/docs/zh/community/comparison/juicefs_vs_alluxio/](https://juicefs.com/docs/zh/community/comparison/juicefs_vs_alluxio/)
+
+Curve官方分布式文件系统对比：[https://github.com/opencurve/curve/wiki/Curve-FAQ](https://github.com/opencurve/curve/wiki/Curve-FAQ)
+
+
+
+## 分布式文件系统对比总结
+
+- Ceph：目前只有块存储还是比较成熟应用得比较多，对象存储和文件系统不太理想，横向扩展难，小文件性能受限。
+抛弃选择原因：难掌握，系统的复杂性需要很强的运维能力才能支撑。
+- GlusterFS：结构相对静态，不易调整，要求各个存储节点有相同的配置，数据或者访问不均衡时没法进行空间或者负载调整，整个系统的可扩展能力有限。
+- Curve：Curve支持块存储，CurveFS支持CurveBS存储后端，也支持S3存储后端。官方文档：[https://github.com/opencurve/curve/blob/master/README_cn.md](https://github.com/opencurve/curve/blob/master/README_cn.md)
+- JuiceFS：存储和计算分离而催生出来的技术。元数据存储依赖Redis和云厂商的存储可靠性。
+
+# Curve
+## 服务端
+
+```bash
+#部署好docker
+bash -c "$(curl -fsSL https://curveadm.nos-eastchina1.126.net/script/install.sh)"
+source /root/.bash_profile
+curveadm completion -h
+```
+
+```bash
+#配置好免密登录
+vim topology.yaml
+```
+
+```bash
+kind: curvefs
+global:
+  user: root
+  ssh_port: 22
+  private_key_file: /root/.ssh/id_rsa
+  container_image: opencurvedocker/curvefs:latest
+  log_dir: /home/${user}/curvefs/logs/${service_role}
+  data_dir: /home/${user}/curvefs/data/${service_role}
+  variable:
+    machine1: 10.0.2.4
+    machine2: 10.0.2.5
+    machine3: 10.0.2.6
+
+etcd_services:
+  config:
+    listen.ip: ${service_host}
+    listen.port: 2380
+    listen.client_port: 2379
+  deploy:
+    - host: ${machine1}
+    - host: ${machine2}
+    - host: ${machine3}
+
+mds_services:
+  config:
+    listen.ip: ${service_host}
+    listen.port: 6700
+    listen.dummy_port: 7700
+  deploy:
+    - host: ${machine1}
+    - host: ${machine2}
+    - host: ${machine3}
+
+metaserver_services:
+  config:
+    listen.ip: ${service_host}
+    listen.port: 6800
+    listen.external_port: 7800
+    metaserver.loglevel: 0
+  deploy:
+    - host: ${machine1}
+    - host: ${machine2}
+    - host: ${machine3}
+      config:
+        metaserver.loglevel: 3
+```
+
+```bash
+curveadm cluster add my-cluster -f topology.yaml
+curveadm cluster checkout my-cluster 
+curveadm deploy
+curveadm status
+```
+**验证集群健康状态**
+
+```bash
+curveadm enter <Id>
+#首先，我们需要进入任意一个服务容器内（服务 ID 可通过 curveadm status 查看）
+curvefs_tool status
+#如果集群健康，在输出的最后会出现 cluster is healthy 的字样。
+```
+![在这里插入图片描述](https://img-blog.csdnimg.cn/fffc34c4c3cb44f39e6af7986b72c837.png)
+
+## 客户端
+
+**通过S3-Minio**
+由于目前 CurveFS 只支持 S3 作为后端存储，CurveBS 后端即将支持。 所以你需要部署一个 S3 存储或使用公有云对象存储，如亚马逊 S3、阿里云 OSS、腾讯云 OSS 等。 下面将展示如果利用 Docker 快速部署一个 Minio 来作为 S3 后端存储：
+
+```bash
+mkdir minio-data
+sudo docker run -d --name minio \
+-p 9000:9000 \
+-p 9900:9900 \
+-v minio-data:/data \
+--restart unless-stopped \
+minio/minio server /data --console-address ":9900"
+```
+创建test桶
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/c6ea8245f97948af8041d07908c0844f.png)
+
+```bash
+mkdir -p /root/curve/curvebs/logs/client
+mkdir -p /data/curvefs
+```
+
+```bash
+vim client.yaml
+```
+
+```bash
+user: root
+host: 10.0.2.4
+ssh_port: 22
+private_key_file: /root/.ssh/id_rsa
+s3.ak: minioadmin
+s3.sk: minioadmin
+s3.endpoint: http://10.0.2.10:9000
+s3.bucket_name: test
+container_image: opencurvedocker/curvefs:latest
+mdsOpt.rpcRetryOpt.addrs: 10.0.2.4:6700,10.0.2.5:6700,10.0.2.6:6700
+log_dir: /root/curve/curvebs/logs/client
+data_dir: /data/curvefs
+```
+
+```bash
+curveadm mount curve-test   /mnt/curve-yutao -c client.yaml
+```
+![在这里插入图片描述](https://img-blog.csdnimg.cn/83309ad454c147d0b64205a010035485.png)
+
+**通过S3-obs**
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/4a5ae06f3ab349b8998632e57f5f31d8.png)
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/b2ae6695c29e433aa0d7f6d566ed1a67.png)
+
