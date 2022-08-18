@@ -46,6 +46,7 @@ source /root/.bashrc
 ```
 
 ```bash
+export http_proxy="http://152.32.167.156:8080"
 export https_proxy="https://152.32.167.156:8084"
 ```
 
