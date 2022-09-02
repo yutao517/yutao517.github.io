@@ -143,7 +143,7 @@ curl \
     http://127.0.0.1:8200/v1/auth/alicloud/roles
 ```
 
-## consul
+## consul秘钥
 
 ```bash
 wget https://releases.hashicorp.com/consul/1.13.1/consul_1.13.1_linux_amd64.zip
