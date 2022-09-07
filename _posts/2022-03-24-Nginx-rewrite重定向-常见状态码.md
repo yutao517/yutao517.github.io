@@ -1,11 +1,10 @@
-
 ---
-layout article
-title Nginx-rewrite重定向-常见状态码
-tags Nginx
-category blog
-date 2022-03-24 000000 +0800
-mermaid true
+layout: article
+title: Nginx-rewrite重定向-常见状态码
+tags: Nginx
+category: blog
+date: 2022-03-24 000000 +0800
+mermaid: true
 ---
 >重定向可以做**防盗链**,防盗图片
 
