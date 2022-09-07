@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Kubernetes(三十)—部署Mysql主从复制+读写分离
+title: Kubernetes(三十一)—部署Mysql主从复制+读写分离
 tags: Kubernetes
 category: blog
 date: 2022-09-07 13:48:00 +08:00
