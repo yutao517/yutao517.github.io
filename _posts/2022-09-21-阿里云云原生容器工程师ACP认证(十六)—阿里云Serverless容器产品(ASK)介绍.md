@@ -3,7 +3,7 @@ layout: article
 title: 阿里云云原生容器工程师ACP认证(十六)—阿里云Serverless容器产品(ASK)介绍
 tags: 阿里云云原生容器工程师 Kubernetes Docker
 category: blog
-date: 2022-09-20 14:21:00 +08:00
+date: 2022-09-21 14:21:00 +08:00
 mermaid: true
 ---
 ## ASK产品简介
