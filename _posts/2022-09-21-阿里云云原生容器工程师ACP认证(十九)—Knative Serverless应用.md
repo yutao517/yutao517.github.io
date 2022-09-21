@@ -1,6 +1,6 @@
 ---
 layout: article
-title: 2022-09-21-阿里云云原生容器工程师ACP认证(十九)—Knative Serverless应用
+title: 阿里云云原生容器工程师ACP认证(十九)—Knative Serverless应用
 tags: 阿里云云原生容器工程师 Kubernetes Docker
 category: blog
 date: 2022-09-21 19:30:00 +08:00
