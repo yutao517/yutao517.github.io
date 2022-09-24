@@ -21,6 +21,9 @@ pod 是经常变化的，每次更新 ip 地址都可能会发生变化，如果
 - iptables
 - lvs(ipvs)
 
+![7dfd3a0e19b2a5b8f3f87b27fd96d29](https://user-images.githubusercontent.com/62100249/192090495-5f40ab2d-1d56-445b-8208-b8ab78017148.png)
+
+
 ## Service类型
 
 尽管每个 Pod 都有一个唯一的 IP 地址，但是如果没有 Service ，这些 IP 不会暴露在集群外部。
