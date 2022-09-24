@@ -20,7 +20,9 @@ pod 是经常变化的，每次更新 ip 地址都可能会发生变化，如果
 - userspace
 - iptables
 - lvs(ipvs)
+
 ## Service类型
+
 尽管每个 Pod 都有一个唯一的 IP 地址，但是如果没有 Service ，这些 IP 不会暴露在集群外部。
 
 - ClusterIP：在集群的内部 IP 上公开 Service 。这种类型使得 Service 只能从集群内访问。
