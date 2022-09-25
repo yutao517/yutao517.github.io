@@ -1,6 +1,6 @@
 ---
 layout: article
-title: 阿里云云原生助理工程师ACA认证(二十五)—容器编排技术与Kubernetes技术简介
+title: 阿里云云原生助理工程师ACA认证(二十六)—容器编排技术与Kubernetes技术简介
 tags: 阿里云云原生容器工程师 Kubernetes Docker
 category: blog
 date: 2022-09-25 15:27:00 +08:00
