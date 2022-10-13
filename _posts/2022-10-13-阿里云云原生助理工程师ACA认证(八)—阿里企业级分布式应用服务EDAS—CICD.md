@@ -1,6 +1,6 @@
 ---
 layout: article
-title: 阿里云云原生助理工程师ACA认证(七)—阿里企业级分布式应用服务EDAS—CICD
+title: 阿里云云原生助理工程师ACA认证(八)—阿里企业级分布式应用服务EDAS—CICD
 tags: 阿里云云原生容器工程师 Kubernetes Docker
 category: blog
 date: 2022-10-13 19:16:00 +08:00
