@@ -16,17 +16,5 @@ Context:	server, location
 ```
 ## 优先级
 
-自上而下
+![image](https://user-images.githubusercontent.com/62100249/196639501-42df7ac9-3c0e-41a3-8b66-fa8881715be4.png)
 
-location = /uri 精准匹配
----
-location ^~ /uri  前缀匹配
----
-location ~ 区分大小写的正则匹配
----
-location ~* 不区分大小写的正则匹配
----
-location /uri 不带修饰的前缀匹配
----
-location / 通用匹配
----
