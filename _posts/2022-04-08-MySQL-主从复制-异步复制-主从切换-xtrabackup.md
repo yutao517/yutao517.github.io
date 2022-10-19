@@ -201,3 +201,15 @@ mysql> show slave status\G
 > 从库中不需要执行reset master了, 因为原主库(现从库)不要再找点啦(Position) 主库直接下线就行了,不需要执行最后把主库变为从库的操作了
 
 
+
+mysql的innodb如何定位锁问题，mysql如何减小主从复制延迟？
+mysql的innodb如何定位锁问题:
+在使用 show engine innodb status检查引擎状态时，发现了死锁问题；在5.5中，information_schema 库中增长了三个关于锁的表（MEMORY引擎）
+innodb_trx ## 当前运行的全部事务 innodb_locks ## 当前出现的锁 innodb_lock_waits ## 锁等待的对应关系
+
+mysql如何减小主从复制延迟:
+若是延迟比较大，就先确认如下几个因素：
+一、从库硬件比主库差，致使复制延迟；二、主从复制单线程，若是主库写并发太大，来不及传送到从库就会致使延迟。更高版本的mysql能够支持多线程复制；三、慢SQL语句过多；四、网络延迟；五、master负载：主库读写压力大，致使复制延迟，架构的前端要加buffer及缓存层；六、slave负载：通常的作法是，使用多台slave来分摊读请求，再从这些slave中取一台专用的服务器。
+
+MySQL数据库主从同步延迟解决方案
+最简单的减小slave同步延时的方案就是在架构上作优化，尽可能让主库的DDL快速执行；还有就是主库是写，对数据安全性较高，好比sync_binlog=1，innodb_flush_log_at_trx_commit= 1 之类的设置，而slave则不须要这么高的数据安全，彻底能够讲sync_binlog设置为0或者关闭binlog。innodb_flushlog也能够设置为0来提升sql的执行效率。另外就是使用比主库更好的硬件设备做为slave。
