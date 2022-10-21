@@ -7,6 +7,25 @@ date: 2022-04-06 000000 +0800
 mermaid: true
 ---
 
+# HTTPS工作流程
+[对称加密与非对称加密的区别](https://www.html.cn/qa/other/20015.html)
+- 对称加密: 加密和解密的秘钥使用的是同一个。
+
+- 非对称加密: 与对称加密算法不同，非对称加密算法需要两个密钥：公开密钥（publickey）和私有密钥（privatekey）。
+
+[HTTPS深入原理](https://juejin.cn/post/6844903830916694030)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/5d30020f1f6f4741ae94d7591dde26de.png)
+
+- Client发起一个HTTPS的请求，根据RFC2818的规定，Client知道需要连接Server的443（默认）端口。
+- Server把事先配置好的公钥证书（public key certificate）返回给客户端。
+- Client验证公钥证书：比如是否在有效期内，证书的用途是不是匹配Client请求的站点，是不是在CRL吊销列表里面，它的上一级证书是否有效，这是一个递归的过程，直到验证到根证书（操作系统内置的Root证书或者Client内置的Root证书）。如果验证通过则继续，不通过则显示警告信息。
+- Client使用伪随机数生成器生成加密所使用的对称密钥，然后用证书的公钥加密这个对称密钥，发给Server。
+- Server使用自己的私钥（private key）解密这个消息，得到对称密钥。至此，Client和Server双方都持有了相同的对称密钥。
+- Server使用对称密钥加密“明文内容A”，发送给Client。
+- Client使用对称密钥解密响应的密文，得到“明文内容A”。
+- Client再次发起HTTPS的请求，使用对称密钥加密请求的“明文内容B”，然后Server使用对称密钥解密密文，得到“明文内容B”。
+
+
 **HTTP1.1与1.0的区别、HTTP与HTTPS的区别？**
 
 - 引入持久链接，即 在同一个TCP的链接中可传送多个HTTP请求 & 响应
