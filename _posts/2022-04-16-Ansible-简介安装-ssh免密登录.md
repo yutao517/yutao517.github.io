@@ -19,6 +19,15 @@ mermaid: true
 - CoreModules：核心模块，主要操作是通过调用核心模块来完成管理任务。
 - CustomModules：自定义模块，完成核心模块无法完成的功能，支持多种语言。
 
+## Ansible命令执行过程
+
+- 加载本身的配置文件默认/etc/ansible/ansible.cfg
+-  加载本身对应的模块文件，如command；
+- 经过ansible将模块或命令生成对应的临时py文件，并将该文件传输至远程服务器的对应执行用户$HOME/.ansible/tmp/ansible-tmp-数字/XXX.PY文件
+- 给文件+x执行；
+- 执行并返回结果；
+- 删除临时py文件，退出
+
 ## 安装
 **环境**：ansible主机（centos7.9），远程主机（centos7.9 IP:121.36.40.218）
 
