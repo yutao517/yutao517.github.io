@@ -6,10 +6,37 @@ category: blog
 date: 2022-03-23 000000 +0800
 mermaid: true
 ---
+
 ## Nginx常用模块
 
 core模块；access访问控制模块；auth_basic基本认证模块；autoindex索引模块；log日志模块；gzip压缩模块；stub_status状态模块；geoip模块；rewrite重定向模块； proxy模块；realip模块；stream模块；upstream模块；
 这些模块博客都会用到
+
+**nginx中rewrite有哪几个flag标志位（last、break、redirect、permanent），说一下都什么意思？经常使用的Nginx模块，用来作什么的？在proxy模块中你配置过哪些参数？**
+
+**flag标志位**
+- last : 至关于Apache的[L]标记，表示完成当前的rewrite规则
+- break : 中止执行当前虚拟主机的后续rewrite指令集
+- redirect : 返回302临时重定向，地址栏会显示跳转后的地址
+- permanent : 返回301永久重定向，地址栏会显示跳转后的地址、301和302不能简单的只返回状态码，还必须有重定向的URL，这就是return指令没法返301,302的缘由了。
+
+last 和 break 区别有点难以理解：
+
+last通常写在server和if中，而break通常使用在location中，last不终止重写后的url匹配，即新的url会再从server走一遍匹配流程，而break终止重写后匹配，break和last都能组织继续执行后面的rewrite指令。
+
+**Nginx模块**
+
+- rewrite模块，实现重写功能 
+- access模块：来源控制 
+- ssl模块：安全加密 
+- ngx_http_gzip_module：网络传输压缩模块 
+- ngx_http_proxy_module 模块实现代理 
+- ngx_http_upstream_module模块实现定义后端服务器列表 
+- ngx_cache_purge实现缓存清除功能
+
+**proxy模块**
+
+配置过:proxy_set_header，proxy_connect_timeout，proxy_send_timeout、proxybuffer。
 
 ## access限制IP地址访问
 
