@@ -7,6 +7,15 @@ date: 2022-04-06 000000 +0800
 mermaid: true
 ---
 
+**HTTP1.1与1.0的区别、HTTP与HTTPS的区别？**
+
+- 引入持久链接，即 在同一个TCP的链接中可传送多个HTTP请求 & 响应
+- 多个请求 & 响应可同时进行、可重叠；
+- 引入更加多的请求头 & 响应头
+
+![image](https://user-images.githubusercontent.com/62100249/197145222-9c85c97f-ea90-42d6-ba58-24c3a12f7f61.png)
+
+
 ## 配置https环境
 
 **阿里云申请免费的证书**
