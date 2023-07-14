@@ -11,7 +11,8 @@ mermaid: true
 - 通过并发扩展和数据扩展相同微服务的多个实例来支持大用户量。
 - 重视微服务架构中的应用托管和微服务治理能力组件的搭建。
 
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/ef33374205774bb59d086e32450da2bc.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/bcc996ee-cad9-4207-b830-772641822b6e)
+
 
 ## 容器技术—更高效更安全的打包部署方式
 - 用轻量级的容器代替性能消耗巨大的虚拟机。
@@ -25,5 +26,7 @@ mermaid: true
 - 计算和存储分离。计算放置在可释放资源中,存储放置在持久资源中
 
 ## 云原生时代推荐的企业级应用架构
-![在这里插入图片描述](https://img-blog.csdnimg.cn/8ff29ca1b3c142e2b05d9e14744e0a02.png)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/677c7490-313d-4fd8-adca-f64d494ca194)
+
 
