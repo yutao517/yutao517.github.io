@@ -45,7 +45,8 @@ Prometheus 支持 PromQL 提供多维度数据模型和灵活的查询，通过�
 - Prometheus 使用各种 Exporter 进行监控，Exporter 的功能类似于 Zabbix 的 Agent，负责收集监控对象端的数据。
 - Prometheus 的 AlertManager 类似于 Zabbix 的 Action，可以进行报警触发，比如发送短信和邮件。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2202c93fdf584474b83302ee323a44bb.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/588e0df3-5a29-43a2-8120-684a1369e81e)
+
 
 系统成熟度：Zabbix 是老牌的监控系统，它在 1998 年就出现了，系统功能比较稳定，成熟度较高。而 Prometheus 是最近几年才诞生的，虽然功能还在不断迭代更新，但站在巨人的肩膀之上，在架构设计上借鉴了很多老牌监控系统的经验。
 
