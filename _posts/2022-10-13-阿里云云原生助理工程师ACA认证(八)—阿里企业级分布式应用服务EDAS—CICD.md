@@ -13,7 +13,8 @@ mermaid: true
 - 提供应用开发、部署、监控、运维等全栈式解决方案
 - 用户不再需要自己组建微服务框架并精心维护各个组建。只需要通过租用EDAS的方式，即可马上实施微服务应用开发
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/651ac545a56d4a55b62eac5a1e820792.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/8d4dbbe2-e9e1-40eb-bd6b-442943be6407)
+
 
 ## EDAS中的微服务核心组件
 - 支持 Spring Cloud,Dubbo，HSF 3大主流微服务框架
@@ -21,7 +22,8 @@ mermaid: true
 - 原生支持Sentinel(AHAS)兼容Hystrix
 - Nacos提供服务鉴权功能，同时通过CSB实现微服务网关
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/55d9952f478643f3adeb74f9eec88834.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/8edf6812-4b23-401f-852b-9bd49b91851e)
+
 
 ## EDAS应用托管
 - 通过应用托管开发者部署和升级应用时不再需要台登录逐台部署服务器的繁杂操作
@@ -36,7 +38,7 @@ mermaid: true
 - JAVA应用支持以JAR (WAR,SAR)包或者容器的形式部署
 - 其他语言使用容器进行部署
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/6577e86acd50410fbea720fe42c58725.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/3ccaac7a-d303-4c90-8024-aabf036e7049)
 
 ## CI/CD部署应用
 CI 持续集成（Continuous Integration）
@@ -60,7 +62,8 @@ CD 持续部署（Continuous Deployment）
 - EDAS目前支持Jenkins和云效两个平台
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/d99950f5186640c0a913d2ec423dd42a.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/d7a824a0-c038-41ab-9b09-1d335c8f5230)
+
 
 ## 在混合云中部署应用
 
@@ -70,13 +73,15 @@ EDAS(专业版或铂金版)
 - 可通过EDAS控制台统一部署及管理阿里云和本地IDC或及其它云服务提供商的HSF、Dubbo和Spring Cloud等应用。
 - 对于阿里云公共云中的ECS实例，EDAS提供弹性伸缩功能。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/17f7bb141b70424bb9601bc43595740f.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/8c80c8af-470d-4f65-8bc6-f320ef2bf03e)
+
 
 ## 分批发布模式
 - 分批发布按照一定的批次，每次只对应用的一部分实例进行升级的发布过程
 - 分批发布过程中如果出现故障，可以终止变更过程并进行回滚，待问题修复后重新发布
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/ded91146bd414e3e91768a7d3fac3252.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/f348f65c-840c-482c-8641-b14bba362439)
+
 ## 灰度发布
 
 又称金丝雀发布，是将应用的旧版本A与新版本B同时部署在环境中，业务请求可能会被路由到版本A的后端上，也可能会被路由到版本B的后端上。您可以自定义灰度发布策略，快速调整版本A和B的流量占比。
@@ -115,5 +120,6 @@ EDAS(专业版或铂金版)
 • 蓝绿发布新集群验证完成后，已经处于正常服务状态，不会再引入不确定性的变更操作。
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f33971df36214b849ec892639adee888.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/f39dae77-b447-42b1-9308-abeb0a700e58)
+
 
