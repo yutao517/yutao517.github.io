@@ -50,4 +50,5 @@ export http_proxy="http://152.32.167.156:8080"
 export https_proxy="https://152.32.167.156:8084"
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/84a6426568524aca840e9eed2e8e180d.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/7af7b308-d57c-4687-99e4-8af068e73a40)
+
