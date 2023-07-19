@@ -89,59 +89,69 @@ zabbix_get -k nginx.status[ping] -s 192.168.2.58
 ### zabbix-server-web配置监控
 先创建nginx主机master-nginx
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/aa6daf8e5db3416781d1d2a100823e7d.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/fd38b70d-9434-40aa-9c46-d34c52b05414)
+
 
 添加应用集nginx
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/5ddee8f005ee416fbae3ac3939265ab6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/5a22a919-e0b2-45f7-b8ee-0b34b7d87359)
+
 
 在应用集nginx增加监控项
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/1827d71f54824cb58dd482ebb6649b5c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/7fefb9ef-56d7-4a90-aa80-787447a060ee)
+
 
 自定义触发器nginx-up-down，监控项为nginx-ping，正常为1，每5s监控一次，若为0，严重警告。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/3f7de86b8db44a47b74fe10bc7a60571.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/09cd94c2-70c2-4825-a599-331a7aab8b69)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/0d03478416bb4f30a3b1463f53d5b7ae.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/792ad9f2-ec53-4389-9701-4585aada74f6)
+
 
 除nginx-ping，nginx-accepts外，需要添加所有状态监控项，只有nginx-ping创建触发器，这里不一一举例。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/3871000c1574457f849af703ecb4f016.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/00fe1af4-da25-4e66-9dc0-a7b34a82ed59)
+
 添加好所有监控项，下一步制图，图中包含所有监控项
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f551b20c829744bd803cc8f5b6c376b3.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/40e3a3c4-df6d-4220-a17b-e6ae3324b076)
+
 
 因为我们监控实际上就是在一直请求，所以看到nginx-requests在不断增加。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/6a3a0b5cd27e46138c1670228146c571.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/3fe74953-319c-4402-acbe-b55af69c38ce)
+
 
 ### 注册企业微信接口
 注册成功之后创建一个运维部门
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/84dc3eb218584473ba8916139c2f987b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/499ce58a-d846-48ed-beda-05d35d0d32de)
+
 
 记住自己的企业ID
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/9b43e8505f0c477093661019a56985ef.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/269361dd-fead-46f2-b256-ac3a44c90ae4)
 
 自建应用
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/ec1b6a3ab5db4e7bbab37ec4f4fbb7d1.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/58a9426a-f362-4067-ac7e-1e735f1d8fd3)
 
 应用名称为zabbix监控
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/429781b8cfc740b3b63b8927590c9e9e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_19,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/75319c7c-ea85-43dd-ad66-b6b2bb913c67)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/b6f6224055694779bcb38b285238b890.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/2dbe4bc3-1d77-4b66-a12a-b7bd54269ce7)
+
 
 创建成功后，查看信息记住自己的AgentId和Secret
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/ff466621447f4c31a0569927a16e2644.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/a8d2443d-bd0f-47f9-8dbe-c9be0122ce68)
+
 
 微信扫码企业微信插件就可以在微信接收消息
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/0649b330e8a5472295873dbcdd7ebaa6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/2d71225f-c6d6-436a-94c9-0cc13e6066e3)
 
 ### zabbix-server接口脚本配置告警
 **Shell脚本**
@@ -204,11 +214,12 @@ curl -d "$(body $1)" https://qyapi.weixin.qq.com/cgi-bin/message/send?access_tok
 ```
 测试脚本能否正常接收消息
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/0afcf63df19a428fa7c3b61fd7e2dbcd.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/68548968-ce2b-4691-b37c-05f4dd2a43b2)
+
 
 可以看到正常接收。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/329403b827f04c4087235e4315b898b2.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/eebf22e9-56d1-4cc0-b1ee-f5ee26855cfe)
 
 然后我们回到zabbix-server-web配置
 
@@ -216,30 +227,35 @@ curl -d "$(body $1)" https://qyapi.weixin.qq.com/cgi-bin/message/send?access_tok
 
 管理->报警媒介类型->创建媒体类型
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/897ee6b21c4e4c5abc5e008a6b5da1cc.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/fd00f124-120f-462e-8d5a-d7206d0ab850)
+
 
 创建用户群组
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/acb48d9d6bfe42ff8e7172fc4ea5016e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/61b7d208-a421-4a33-b16f-624e9afbae34)
 
 创建用户
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/0df624972fb8430bb1e1dfa357bed27a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/3308f2e6-1bdf-4a0e-8d92-0f43768da24e)
 
 报警媒介
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/d4885af06d814c1492078a7005b22109.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/ba61e2b4-914c-468b-9ba0-5c03d29ddb66)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f70e97941482419cb5186b0ee05ed7fc.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/282ac6ef-0f73-4441-b6ec-68591ee9d539)
 
 权限->超级管理员
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/e5d9532fa8c047f89ad092ae4946cc21.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/af67a7a1-4fc2-408c-84dc-e3bd92626c65)
+
 配置->动作
 
 添加触发器
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/ef671d03aa39425784d8c773397c83d0.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/35fd1b80-d326-493a-bdb2-4710418a723d)
+
 操作
 
 > 故障{TRIGGER.STATUS},服务器:{HOSTNAME1}发生{TRIGGER.NAME}故障!
@@ -252,7 +268,7 @@ curl -d "$(body $1)" https://qyapi.weixin.qq.com/cgi-bin/message/send?access_tok
 当前状态:{TRIGGER.STATUS}:{ITEM.VALUE1}
 事件ID:{EVENT.ID}
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7e15057e31eb431992c77c720a91169b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/b06f50df-c0ec-490e-a118-15612b23dfc5)
 
 恢复操作
 
@@ -266,19 +282,24 @@ curl -d "$(body $1)" https://qyapi.weixin.qq.com/cgi-bin/message/send?access_tok
 当前状态:{TRIGGER.STATUS}:{ITEM.VALUE1}
 事件ID:{EVENT.ID}
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/28715fe509a544398c50a9cf98fcc0bb.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/d5444fa1-3775-417a-a2a9-f8ea52afd202)
+
 
 ### zabbix-agent关停nginx服务测试
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f8fd28f8bfa84658bfeda8b21370d0b6.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/64447777-e5b5-44c3-b4ad-811d7e40c9d8)
+
 
 可以看到推送成功
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/bfa00a728a1a4208b45cb4db5f072d11.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/bf1e5259-48d0-44ea-951c-d9181c946122)
+
 
 #### Python webhook机器人脚本
 新建一个测试群聊，在群里添加机器人，记住webhook地址
-![在这里插入图片描述](https://img-blog.csdnimg.cn/92a6332fd2394ec38c71333b25222e79.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/aa58cd07-868d-4c56-9f3d-b2dcaf3ecbb9)
+
 
 除了使用Shell脚本配置接口之外，还可以使用Python脚本
 
@@ -314,5 +335,5 @@ if __name__ == '__main__':
 python weixin.py test
 ```
 web配置同上
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/a9136ca7-bbb5-4dbe-bfde-ab36b02e4ca1)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/e0e7950ce72b4f998f176524493392b6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
