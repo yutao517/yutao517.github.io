@@ -29,7 +29,8 @@ mermaid: true
 
  DockerSwarm、Mesos、Kubernetes都在容器编排领域展开角逐。Swarm 和Mesos的特点，那就是各自只在生态和技术方面比较强。Kubernetes则兼具了两者优势，最终在2017年“三国争霸”的局面中得以胜出，成为了当时直到现在的容器编排标准。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/4c5340a2d9274125b20bb239e5274b70.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/bc880fa9-a277-4bc7-9f44-d2b94d61c656)
+
 
 **Kubernetes容器编排的事实标准**
 
