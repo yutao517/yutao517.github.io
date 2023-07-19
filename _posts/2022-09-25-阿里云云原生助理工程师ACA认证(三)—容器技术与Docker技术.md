@@ -31,9 +31,11 @@ mermaid: true
 - 容器是轻量级的
 
 ## 容器和虚拟机之间的差异
-![在这里插入图片描述](https://img-blog.csdnimg.cn/a7bb85851b294c9db937bbb78fd04934.png)
 
- ![在这里插入图片描述](https://img-blog.csdnimg.cn/4c96fb37fe3041d0bbbdb4de5a60cc8b.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/466b657a-9677-4504-a27e-07a97c6a43e3)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/d43704b2-7378-4e8f-9c2d-67d46577a290)
+
 
 ## Docker的核心概念及架构
 **Docker容器**
@@ -57,8 +59,7 @@ mermaid: true
 
 **Docker容器到底帮助我们解决什么问题?**
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/1064dad8d32647b9aa9596f73d466286.png)
-
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/f3f6f317-c3bc-4615-96b3-50005008d8a2)
 
 - 简化配置
 - 代码流水线管理
@@ -71,7 +72,8 @@ mermaid: true
 
 **Docker的三大核心概念**
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/6e42f8853f5d4d4e81343a77206bca25.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/4545fcde-50ec-45cf-806e-13092124767c)
+
 **容器镜像-容器封装的标准基础**
 
  **Docker镜像**：是一个Linux的文件系统，包含运行的程序以及程序、库、资源、配置等数据。
@@ -134,16 +136,18 @@ Docker运行过程也就是去仓库把镜像拉到本地，然后用一条命�
 - Run(运行镜像):运行的镜像就是一个容器,容器就是运行程序的地方。
 
 ## 什么是Dockerfile
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f497d51d11014fe7aa3891ca9083587c.png)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/80554c05-59d8-408c-adaa-0f93ab84e2ea)
 
 - Dockerfile是一个用来构建镜像的文本文件，文本内容包含了一条条构建镜像所需的指令和说明。
 - Dockerfile是软件开发的基础Docker镜像是软件的交付品
 - Docker容器则可以认为是软件的运行态
 - Dockerfle面向开发，Docker镜像成为交付标准，Docker容器则涉及部署与运维，三者缺一不可，构成Dockerd的基础
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/d41049cceb0f48c4b36cd98efd2656b7.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/623fb669-318a-4c8e-b428-27b17378e44f)
 
 ## Docker基础操作
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/9f6a202a7d16499eb6b52439d1a46672.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/f6767a7d-cc7d-4a80-84ae-2d0e56f500d9)
+
 
