@@ -188,21 +188,28 @@ vrrp_instance VI_2 {
 ```
 
 结果，访问192.168.2.31或者192.168.2.30产生轮询效果，其中一台负载均衡器发生故障可以漂移到另外一台备用机不影响使用。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/58528780b55e4adf9a12fc9380a999fb.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/4b25e3e9179e4f10a59ff5dab14ab41e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/0e8cfe77-5588-4bc4-9cb0-d5e0ea954ba2)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/4fb881e6e0cf4bf4b48d9197b50cf3eb.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/544543a553e0424d9af5b9266f09d6a3.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/200fe20f-ba2e-4a4e-b0b9-22c01bfe5419)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/9910c89e039e4e399b4a81e2b37e9b04.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/d3d09b15d0de4ee4a42918670f84f10a.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/a57a14b7-6e97-4a6d-af03-6e1276fdd802)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/40439d17-08b3-4f4d-a8da-9a5e32da48f7)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/1217cb5b-6b0e-43a7-a36c-e0f7ca908026)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/6790b8dc-867e-46d1-8b83-e30063bc949d)
+
 在192.168.2.188上关闭keepalived模拟宕机
 ```bash
 service keepalived stop
 ```
 
 可以看到当一台负载（192.168.2.188）发生故障，ip会漂移到另外一台，不影响用户使用，用户根本无法察觉。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/a2d0c58375c14246944394a224047194.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/d74e60e3-4b69-4cc8-b514-cd086df50465)
+
 
 
 
