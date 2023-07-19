@@ -14,7 +14,7 @@ cd playbook/ansible-nginx
 mkdir files templates
 vim web-notls.yml
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/97ab1bae153e4a32affae6c61bb9f40b.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/9dd8a759-0029-49e6-89f5-e197a429a907)
 
 ```bash
 - name: Configure webserver with nginx
@@ -103,11 +103,13 @@ http {
 ```bash
 ansible-playbook web-notls.yml
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/dbf5c7ec06bc42208bed318fc18492b1.png)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/dc5c8aa0-4e43-4bb7-90b1-9d7fe069dcf7)
 
 ## 验证效果
 看到自定义的HTML页面是，输出结果如下图所示：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/485b8661b7f44ca8afd5289d8f15b1ea.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/2e193b4d-5fdb-419a-b03f-2ffb3690e70b)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/497a753a6a2b4d8095fe456ee9992f81.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/0055a7cc-6aef-4d24-95f3-f494f47a451a)
+
