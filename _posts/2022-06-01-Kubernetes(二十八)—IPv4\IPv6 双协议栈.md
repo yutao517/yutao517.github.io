@@ -9,7 +9,7 @@ mermaid: true
 ## 虚拟机配置IPV6
 环境：虚拟机使用NAT模式并启用IPV6
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/826d72f4c73f4d1cbf46a204b15dcd38.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/6090aeff-3a4a-407b-b4e8-5d888d015797)
 
 ```bash
 vim /etc/sysconfig/network-scripts/ifcfg-ens33 
@@ -55,7 +55,7 @@ serice network restart
 因为我的外网并没有IPV6功能，所以仅能在NAT局域内部使用
 使用主机ping -6
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/acd948e63fa04c07b379350f71a4a442.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/f302b509-c97b-4c09-a3eb-3e6c4aeaf2ad)
 
 配置成功
 ## sysctl参数启用ipv6
@@ -134,7 +134,7 @@ networking:
 kubeadm init --config=kubeadm-init.yaml
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/3b81ead829f4401a8134e1a5db9af240.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/7940762f-d4c1-400b-8c9b-7c1abd29f094)
 
 ```bash
 mkdir -p $HOME/.kube
@@ -147,8 +147,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubeadm join [fd15:4ba5:5a2b:1008::10]:6443 --token a7nn29.3s6b1q0pjrxxuwhi \
         --discovery-token-ca-cert-hash sha256:5648eeecff97b13cb22e8d1f0ed8bbec06425424934e7afe8b90e50871e5dc7b 
 ```
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7f0260a6aa16468980cc2cf0b34ecfc4.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/9f2dcf89-4e23-48c3-bb80-f79650cc90e3)
 
 ## 安装Calico
 **卸载flannel**
@@ -169,9 +168,9 @@ systemctl restart kubelet
 ```bash
 kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7bfe3e1a476041928d4252559b531414.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/15b66cd5-e981-455c-9a10-e4fc5870a535)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/bbf56cd9cfb846c5b2f6b619703b6d87.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/16eab2f8-a10d-4052-9e72-81cf08ad6fbd)
 
 安装Calio-IPV6
 
@@ -218,4 +217,5 @@ kubectl  apply -f calico-ipv6.yaml
 kubectl get nodes k8s-node1 -o go-template --template='{{range .spec.podCIDRs}}{{printf "%s\n" .}}{{end}}'
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f1641d26b5fb49a0aa0870d909916f8a.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/5be69ae0-c87b-41b4-9736-2db7fa863bf6)
+
