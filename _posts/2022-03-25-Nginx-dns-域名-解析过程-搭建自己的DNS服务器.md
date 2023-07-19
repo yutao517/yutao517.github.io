@@ -13,9 +13,7 @@ mermaid: true
 
 ## 域名
 
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/9bcbdf8ed8f24d52ac675cd09c09cc9b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
-
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/df6323d5-afb4-4e58-ad25-d8dec564d09c)
 
  |  sc   | .yutao  |.co
  |  ----  | ----  | ---|
@@ -66,7 +64,10 @@ mermaid: true
 - 转发域名服务器
 负责所有非本地域名的本地查询。转发域名服务器接到查询请求后，在其缓存中查找，如找不到就将请求依次转发到指定的域名服务器，直到查找到结果为止，否则返回无法映射的结果
 
-## DNS解析过程![在这里插入图片描述](https://img-blog.csdnimg.cn/8d9206cb845c40b39e9b9ef27e6d8d99.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+## DNS解析过程
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/6109c51e-050f-4674-8daa-bf143fecd00f)
+
 输入www.yutao.co时：
 
 
