@@ -16,7 +16,8 @@ mermaid: true
 - 非对称加密: 与对称加密算法不同，非对称加密算法需要两个密钥：公开密钥（publickey）和私有密钥（privatekey）。
 
 [HTTPS深入原理](https://juejin.cn/post/6844903830916694030)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/5d30020f1f6f4741ae94d7591dde26de.png)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/5bf07546-198d-48ac-80e7-6b11c5ff766c)
 
 - Client发起一个HTTPS的请求，根据RFC2818的规定，Client知道需要连接Server的443（默认）端口。
 - Server把事先配置好的公钥证书（public key certificate）返回给客户端。
@@ -41,14 +42,18 @@ mermaid: true
 
 **阿里云申请免费的证书**
 
-找到SSL证书![在这里插入图片描述](https://img-blog.csdnimg.cn/4897bcac60064858a632b0a44c81aaa8.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/186fa457-24cd-4498-ac1f-e4e4d2e9bfc5)
+
 立即购买免费证书
-![在这里插入图片描述](https://img-blog.csdnimg.cn/8df9ef898c4a4651b4a187acfa925e84.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/df495547-8603-400f-9eda-b4ca2c5a7b81)
+
 创建证书，证书申请
-![在这里插入图片描述](https://img-blog.csdnimg.cn/3148dc83e7514f80b30d5fd35932cab2.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
 
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/11b49b9c-0807-449f-95a3-58c66a0ddcb3)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/1a15328679d442cdaec349e57c352c1e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_20,color_FFFFFF,t_70,g_se,x_16)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/ef15a737-e866-46a4-975a-7d1dc3780594)
+
 
 
 
@@ -111,4 +116,6 @@ server {
 #http重定向
 ```
 访问网站已经是安全链接
-![在这里插入图片描述](https://img-blog.csdnimg.cn/88defd71ee22473bae5a6df7801de578.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAeXV0YW9fNTE3,size_15,color_FFFFFF,t_70,g_se,x_16)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/831e74f5-43e1-4f24-a4ed-db397251400e)
+
