@@ -32,15 +32,15 @@ vault secrets enable alicloud
 
 - 在阿里云中为该用户创建访问密钥，这是用户页面上阿里云 UI 中可用的操作。
 
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/b37bf7c8d5a94f2a819bde746af1bfbf.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/61ac6ef1-eced-45f8-8363-c12fccc39f66)
 
 ```bash
 vault write alicloud/config \
     access_key= \
     secret_key=
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/81b5d8ab68ca4a23ac19cfb3e595393c.png)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/6774f5b9-4d2a-4ba8-b7b9-250373a14951)
 
 配置一个角色，描述如何授予凭据。仅使用已在阿里云中创建的策略生成访问令牌。
 
@@ -72,7 +72,7 @@ EOF
 vault write alicloud/role/dev-role   role_arn='acs:ram::1578287549522794:role/dev-role'
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/e2cf219cefd8444eabd88d48323daa6e.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/a8e97583-8f94-4e10-b3ec-1294b30c8671)
 
 **生成密钥**
 
@@ -83,7 +83,7 @@ vault write alicloud/role/dev-role   role_arn='acs:ram::1578287549522794:role/de
 vault read alicloud/creds/policy-based
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/325a26cc40be458f95d7a3825e62c754.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/161bd42a-6069-4718-99d1-03f5f087d37b)
 
 **回收密钥**
 
@@ -91,7 +91,8 @@ vault read alicloud/creds/policy-based
 vault lease revoke alicloud/creds/policy-based/KSPlpAF9wwoc88Pg4wvVZyKg
 ```
 可以看到生成了新的用户
-![在这里插入图片描述](https://img-blog.csdnimg.cn/b51a622e2769403f9bf271fd3573f86c.png)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/04ad50af-d6c8-4f26-b59c-04b33d35fea6)
 
 ## 指定存储后端consul
 
@@ -111,14 +112,15 @@ storage "consul" {
 vault server -dev -dev-listen-address=0.0.0.0:8200 -config=/root/config.hcl
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f889ca1465ee496494bbdac8f8bc2dca.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/de4115a7-f80c-42ae-8ede-45039857a024)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/0bbd6b8f2841493982df458189cc3a86.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/a97896d5-7e22-4989-bf23-941c7247bf14)
 
 ```bash
  curl  http://127.0.0.1:8500/v1/kv/vault/sys/expire/id/alicloud/creds/policy-based/iPed4e7I2dWZAIpN4UZkZDe9 --header "X-Consul-Token: 66911333-d553-f761-c425-a3aee5c0a165"
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/0cd81e8843e744beb87c2e3c70787e5d.png)
+
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/9821ec19-5d3a-4e96-9561-4c6b7209e383)
 
 **常用接口**
 
@@ -173,15 +175,16 @@ consul agent -dev -ui -client 0.0.0.0 -config-dir=/etc/consul.d/
 consul acl bootstrap
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7f0b0e5328964ba2bc7b79089e2a1b54.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/642beb1c-eb9b-4cfa-9c54-ba1e969d5ced)
 
 WEB UI输入SecretID
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/000364424fcd49a7bdcce8db5982575c.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/fcc4d31d-0ad3-482d-b135-f2ef5efec617)
 
 ```bash
 vault write consul/config/access  address="127.0.0.1:8500" token="eb88815c-2065-b1f8-7920-6ea7b5cb532a"
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/402611ce89fb4ceab5f4f1b805ff779a.png)
+![image](https://github.com/yutao517/yutao517.github.io/assets/62100249/09548c3e-b060-42e0-ae26-a46bcda432b4)
+
 
 
