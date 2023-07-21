@@ -3,7 +3,7 @@ layout: article
 title: CCNP(二)－路由协议-EIGRP
 tags: 计算机网络
 category: blog
-date: 2023-07-2１ 00:00:00 +08:00
+date: 2023-07-21 00:00:00 +08:00
 mermaid: true
 ---
 ## 路由协议分类
