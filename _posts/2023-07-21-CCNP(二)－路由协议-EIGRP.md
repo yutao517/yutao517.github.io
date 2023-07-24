@@ -42,7 +42,6 @@ mermaid: true
 
 - **距离矢量路由协议(DV)**：**RIP**(Routing Information Protocols，路由信息协议)
 - **链路状态路由协议(LS)**：最短路径优先（OSPF），中间系统到中间系统（IS-IS）
-
 - **混合性**：**IGRP**和**EIGRP**均有以上两种特点，IGRP是CISCO专有的协议，只在CISCO路由器中实现；EIGRP协议是IGRP的增强版，它也是CISCO专有的路由协议，EIGRP是一种高级距离矢量路由协议（也称混合型路由协议）。
 
 **路由协议有无类分类**
